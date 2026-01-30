@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"button_text_finder",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"button_text_finder",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
