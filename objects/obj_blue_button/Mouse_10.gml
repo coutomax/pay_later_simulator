@@ -1,1 +1,1 @@
-xscale = escalaX * 1.1;
+event_inherited();

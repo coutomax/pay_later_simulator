@@ -1,0 +1,1 @@
+xscale = escalaX * 1.1;
