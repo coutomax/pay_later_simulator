@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"keyboard",
+  "%Name":"snd_button_click_up",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,17 +10,17 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":8.0979595,
+  "duration":0.10666667,
   "exportDir":"",
-  "name":"keyboard",
+  "name":"snd_button_click_up",
   "parent":{
-    "name":"Game Effects",
-    "path":"folders/Sounds/Game Effects.yy",
+    "name":"UI",
+    "path":"folders/Sounds/UI.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"keyboard.mp3",
+  "soundFile":"snd_button_click_up.mp3",
   "volume":1.0,
 }

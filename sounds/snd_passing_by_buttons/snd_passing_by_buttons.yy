@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"passing_by_ui_2",
+  "%Name":"snd_passing_by_buttons",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -12,7 +12,7 @@
   "conversionMode":0,
   "duration":0.19201814,
   "exportDir":"",
-  "name":"passing_by_ui_2",
+  "name":"snd_passing_by_buttons",
   "parent":{
     "name":"UI",
     "path":"folders/Sounds/UI.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"passing_by_ui_2.mp3",
+  "soundFile":"snd_passing_by_buttons.mp3",
   "volume":1.0,
 }

@@ -29,7 +29,10 @@
   "ForcedPrefabProjectReferences":[
     {"link":"io.gamemaker.sdfshaders-1.0.0","name":"io.gamemaker.sdfshaders-1.0.0","path":"io.gamemaker.sdfshaders-1.0.0.yyp",},
   ],
-  "IncludedFiles":[],
+  "IncludedFiles":[
+    {"$GMIncludedFile":"","%Name":"button_click1.mp4","CopyToMask":-1,"filePath":"datafiles","name":"button_click1.mp4","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"button_click2.mp4","CopyToMask":-1,"filePath":"datafiles","name":"button_click2.mp4","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+  ],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
@@ -50,9 +53,10 @@
     {"id":{"name":"RoomUI","path":"roomui/RoomUI/RoomUI.yy",},},
     {"id":{"name":"button_text_finder","path":"scripts/button_text_finder/button_text_finder.yy",},},
     {"id":{"name":"initializer","path":"scripts/initializer/initializer.yy",},},
-    {"id":{"name":"button_click","path":"sounds/button_click/button_click.yy",},},
-    {"id":{"name":"keyboard","path":"sounds/keyboard/keyboard.yy",},},
-    {"id":{"name":"passing_by_ui_2","path":"sounds/passing_by_ui_2/passing_by_ui_2.yy",},},
+    {"id":{"name":"snd_button_click_down","path":"sounds/snd_button_click_down/snd_button_click_down.yy",},},
+    {"id":{"name":"snd_button_click_up","path":"sounds/snd_button_click_up/snd_button_click_up.yy",},},
+    {"id":{"name":"snd_keyboard","path":"sounds/snd_keyboard/snd_keyboard.yy",},},
+    {"id":{"name":"snd_passing_by_buttons","path":"sounds/snd_passing_by_buttons/snd_passing_by_buttons.yy",},},
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},},
     {"id":{"name":"spr_blue_button","path":"sprites/spr_blue_button/spr_blue_button.yy",},},
     {"id":{"name":"spr_character","path":"sprites/spr_character/spr_character.yy",},},

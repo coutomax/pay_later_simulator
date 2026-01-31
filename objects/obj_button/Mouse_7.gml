@@ -9,4 +9,6 @@ else
 	image_index = 0;
 }
 
+audio_play_sound(snd_button_click_up, 0, false);
+
 button_actions();
