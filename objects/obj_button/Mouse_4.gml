@@ -11,3 +11,5 @@ else
 {
 	image_index = 1;
 }
+
+audio_play_sound(snd_button_click_down, 0, false, 0.05);
