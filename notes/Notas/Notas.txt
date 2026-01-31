@@ -1,3 +1,2 @@
 Validar pra quando um dialog estiver aberto, impedir o click em outros botões, 
 assim como acontece na pausa. 
-
