@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_character",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_table",
+  "eventList":[],
   "managed":true,
-  "name":"obj_character",
+  "name":"obj_table",
   "overriddenProperties":[],
   "parent":{
     "name":"Visual Game Objects",
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_character",
-    "path":"sprites/spr_character/spr_character.yy",
+    "name":"spr_table",
+    "path":"sprites/spr_table/spr_table.yy",
   },
   "spriteMaskId":null,
   "visible":true,

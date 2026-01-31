@@ -20,56 +20,69 @@ hasntSave = actions == "continue_save" && !global.hasSave
 
 function button_actions()
 {
-	switch(actions)
+	// valida botões fora do opainel de pause quando global.pause == true;
+
+	if (getLayerName != "ui_pause_menu" && getLayerName != "ui_quit_without_save" && global.paused)
 	{
-		case "new_game":
-			room_goto(0);
-			layer_set_visible("ui_start_menu", false);
-		break;
+		exit;
+	}
+	else
+	{
+		switch(actions)
+		{
+			case "new_game":
+				room_goto(0);
+				layer_set_visible("ui_start_menu", false);
+			break;
 		
-		case "continue":
-			layer_set_visible("ui_pause_menu", false);
-			global.paused = false;
-		break;
+			case "continue":
+				layer_set_visible("ui_pause_menu", false);
+				global.paused = false;
+			break;
 		
-		case "continue_save":
+			case "continue_save":
 			
-		break;
+			break;
 		
-		case "settings":
+			case "settings":
 		
-		break;
+			break;
 		
-		case "yes_option":
-			game_end();
-		break;
+			case "yes_option":
+				game_end();
+			break;
 		
-		case "no_option":
-			layer_set_visible(self.layer, false);
-			layer_set_visible("ui_start_menu", true);
-		break;
+			case "no_option":
+				layer_set_visible(self.layer, false);
+				layer_set_visible("ui_start_menu", true);
+			break;
 		
-		case "main_menu":
-			layer_set_visible("ui_quit_without_save", true);			 
-		break;
+			case "main_menu":
+				layer_set_visible("ui_quit_without_save", true);			 
+			break;
 		
-		case "back_menu_yes_option":		
-			global.paused = false;
-			layer_set_visible(self.layer, false);
-			layer_set_visible("ui_pause_menu", false);
-			layer_set_visible("ui_start_menu", true);
+			case "back_menu_yes_option":		
+				global.paused = false;
+				layer_set_visible(self.layer, false);
+				layer_set_visible("ui_pause_menu", false);
+				layer_set_visible("ui_start_menu", true);
 			
-			room_goto(1);
-		break;
+				room_goto(1);
+			break;
 		
-		case "back_menu_no_option":
-			layer_set_visible(self.layer, false);
-		break;
+			case "back_menu_no_option":
+				layer_set_visible(self.layer, false);
+			break;
 		
-		case "exit":
-			layer_set_visible(self.layer, false);
-			layer_set_visible("ui_yes_no_option_menu", true);
-		break;
+			case "exit":
+				layer_set_visible(self.layer, false);
+				layer_set_visible("ui_yes_no_option_menu", true);
+			break;
+			
+			case "work":
+				show_debug_message("TÁ TRABAIANO");
+			break;
+		}
 	}
 }
 

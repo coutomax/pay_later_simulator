@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"sp_gui",
-    "path":"sprites/sp_gui/sp_gui.yy",
+    "name":"spr_gui",
+    "path":"sprites/spr_gui/spr_gui.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
