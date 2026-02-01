@@ -1,2 +1,15 @@
 Validar pra quando um dialog estiver aberto, impedir o click em outros botões, 
 assim como acontece na pausa. 
+
+avaliar que horas o personagem dorme, ou até mesmo, se haverá um horário para isso.
+
+criar objeto com possibilidades como:
+[
+	{
+		id: 0,
+		tag: "dor de cabeça"
+		effect: global.energy = global.energy - 10;
+				global.estress = global.stress - 25;
+		sprite: spr_desease
+	}	
+]

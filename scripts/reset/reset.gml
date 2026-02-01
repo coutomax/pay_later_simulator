@@ -1,10 +1,4 @@
-/*
-
-						CRIA E INICIA TODAS AS VIARIÁVEIS GLOBAIS
-
-*/
-
-//booleanos
+function reset(){
 global.paused = false;
 global.hasSave = false;
 global.hadLunch = false;
@@ -28,3 +22,4 @@ global.day = 1;
 global.week = 1;
 global.month = 1;
 global.year = 1;
+}

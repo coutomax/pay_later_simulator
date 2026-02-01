@@ -32,6 +32,7 @@ function button_actions()
 		{
 			case "new_game":
 				room_goto(0);
+				layer_set_visible("ui_bars", true);
 				layer_set_visible("ui_start_menu", false);
 			break;
 		
@@ -65,8 +66,9 @@ function button_actions()
 				global.paused = false;
 				layer_set_visible(self.layer, false);
 				layer_set_visible("ui_pause_menu", false);
+				layer_set_visible("ui_bars", false);				
 				layer_set_visible("ui_start_menu", true);
-			
+				reset();
 				room_goto(1);
 			break;
 		
@@ -80,7 +82,7 @@ function button_actions()
 			break;
 			
 			case "work":
-				show_debug_message("TÁ TRABAIANO");
+				global.energy -= 5;
 			break;
 		}
 	}

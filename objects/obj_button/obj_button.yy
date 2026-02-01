@@ -47,6 +47,7 @@
         "\"sleep\"",
         "\"eat\"",
         "\"exercise\"",
+        "\"ok_option\"",
       ],"multiselect":false,"name":"actions","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"new_game\"","varType":6,},
   ],
   "resourceType":"GMObject",

@@ -8,3 +8,5 @@ else
 {
 	layer_set_visible("ui_bottom_buttons", false);
 }
+
+clock();
