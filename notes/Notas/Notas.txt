@@ -3,6 +3,8 @@ assim como acontece na pausa.
 
 avaliar que horas o personagem dorme, ou até mesmo, se haverá um horário para isso.
 
+Colocar as horas da variavel time no texto da layer
+
 criar objeto com possibilidades como:
 [
 	{

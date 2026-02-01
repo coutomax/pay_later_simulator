@@ -53,6 +53,7 @@ function clock()
 	var minutes = string_replace_all(m, " ", "0");
 	
 	time = $"{hours}:{minutes}";
-			
-	show_debug_message(time);
+	
+	
+	
 }
