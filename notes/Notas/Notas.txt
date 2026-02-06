@@ -5,6 +5,8 @@ avaliar que horas o personagem dorme, ou até mesmo, se haverá um horário para
 
 Colocar as horas da variavel time no texto da layer
 
+Avaliar se crio uma barra ou contador para FOME
+
 criar objeto com possibilidades como:
 [
 	{

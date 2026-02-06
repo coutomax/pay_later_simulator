@@ -9,4 +9,6 @@ else
 	layer_set_visible("ui_bottom_buttons", false);
 }
 
-clock();
+day_editor();
+money_editor();
+clock_formatter();

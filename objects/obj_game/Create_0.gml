@@ -4,17 +4,22 @@ game_seconds = 0;
 game_minutes = 0;
 game_hours = 0;
 
-game_days = 0;
-game_months = 0;
-game_years = 0;
+game_days = 1;
+game_months = 1;
+game_years = 1;
 
-time = 0
+clock_text_element_id = flexpanel_get_element_id("ui_clock", "fp_clock");
+money_text_element_id = flexpanel_get_element_id("ui_clock","fp_money");
+calendar_text_element_id = flexpanel_get_element_id("ui_clock","fp_calendar");
 
-function clock()
+function clock_formatter() // formata a data e o horário
 {
+	
+	var month_days = global.months[global.month - 1].days;
+	
 	game_seconds++;
 	
-	if (game_seconds >= room_speed * 0.25)
+	if (game_seconds >= room_speed * 0.15)
 	{
 		game_minutes++;
 		game_seconds = 0;
@@ -29,20 +34,29 @@ function clock()
 	// avaliar o limite de "sono" do personagem
 	if (game_hours >= 24)
 	{		
-		game_days++;
+		global.day++;
+		global.week_day++;
+		game_days = global.day;
 		game_hours = 0;
+		
+		if (global.week_day >= 7)
+		{
+			global.week_day = 1;
+		}
 	}
 	
-	//fazer um tratamento pra levar em conta dias com 31 dias e anos bissextos
-	if (game_days >= 30)
+	if (game_days >= month_days)
 	{
-		game_months++;
+		global.month++;
+		game_months = global.month;
 		game_days = 0;
+		global.month_day = 0;
 	}
 	
 	if (game_months >= 12)
 	{
-		game_years++;
+		global.year++;
+		game_years = global.year;
 		game_months = 0
 	}
 	
@@ -52,8 +66,23 @@ function clock()
 	var hours = string_replace_all(h, " ", "0");
 	var minutes = string_replace_all(m, " ", "0");
 	
-	time = $"{hours}:{minutes}";
+	var time = $"{hours}:{minutes}";
 	
+	layer_text_text(clock_text_element_id, time);
+}
+
+function money_editor() // formata o dinheiro
+{
+	var money = global.money;
+	var money_format = string_format(money, 0, 2);
 	
+	layer_text_text(money_text_element_id, $"c$: {money_format}");
+}
+
+function day_editor() // formata o dia, mês e ano
+{
+	var days = global.days;
+	var calendar = $"{global.days[global.week_day].name} {global.month_day} {global.months[global.month - 1].name}";
 	
+	layer_text_text(calendar_text_element_id, calendar);
 }

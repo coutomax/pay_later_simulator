@@ -14,7 +14,7 @@ hasntSave = actions == "continue_save" && !global.hasSave
 	getLayerName = layer_get_name(self.layer);
 	
 	selfLayer = layer_get_flexpanel_node(getLayerName);	
-	selfText = button_text_finder(selfLayer, $"fp_{actions}");
+	selfText = flexpanel_text_finder(selfLayer, $"fp_{actions}");
 
 #endregion
 
@@ -33,6 +33,7 @@ function button_actions()
 			case "new_game":
 				room_goto(0);
 				layer_set_visible("ui_bars", true);
+				layer_set_visible("ui_clock", true);
 				layer_set_visible("ui_start_menu", false);
 			break;
 		
@@ -64,10 +65,14 @@ function button_actions()
 		
 			case "back_menu_yes_option":		
 				global.paused = false;
+				
 				layer_set_visible(self.layer, false);
+				layer_set_visible("ui_bars", false);
+				layer_set_visible("ui_clock", false);
 				layer_set_visible("ui_pause_menu", false);
-				layer_set_visible("ui_bars", false);				
+				
 				layer_set_visible("ui_start_menu", true);
+				
 				reset();
 				room_goto(1);
 			break;
@@ -83,6 +88,7 @@ function button_actions()
 			
 			case "work":
 				global.energy -= 5;
+				global.stress += 1;
 			break;
 		}
 	}

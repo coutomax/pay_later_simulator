@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"flexpanel_get_element_id",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"flexpanel_get_element_id",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
