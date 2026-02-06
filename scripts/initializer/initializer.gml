@@ -79,7 +79,7 @@ global.months =
 	{
 		id: 2,
 		name: "Feb",
-		days: global.year % 4 == 0 ? 28 : 29
+		days: global.year % 4 == 0 ? 29 : 28
 	},
 	{
 		id: 3,

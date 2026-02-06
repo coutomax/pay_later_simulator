@@ -49,15 +49,16 @@ function clock_formatter() // formata a data e o horário
 	{
 		global.month++;
 		game_months = global.month;
-		game_days = 0;
-		global.month_day = 0;
+		game_days = 1;
+		global.day = 1;
 	}
 	
 	if (game_months >= 12)
 	{
 		global.year++;
 		game_years = global.year;
-		game_months = 0
+		game_months = 1
+		global.month = 1;
 	}
 	
 	var h = string_format(game_hours, 2, 0);
@@ -82,7 +83,7 @@ function money_editor() // formata o dinheiro
 function day_editor() // formata o dia, mês e ano
 {
 	var days = global.days;
-	var calendar = $"{global.days[global.week_day].name} {global.month_day} {global.months[global.month - 1].name}";
+	var calendar = $"{global.days[global.week_day - 1].name} {global.day} {global.months[global.month - 1].name} Year {global.year}";
 	
 	layer_text_text(calendar_text_element_id, calendar);
 }
