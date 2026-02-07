@@ -14,6 +14,19 @@
               ],"flexDirection":0,"height":{"unit":2,"value":50.0,},"justifyContent":0,"name":"fp_panel","nodeColour":4288737864,"positionTop":{"unit":2,"value":1.0,},"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":2,"value":25.4,},},
           ],"flexDirection":0,"height":{"unit":2,"value":100.0,},"justifyContent":1,"name":"fp_screen","nodeColour":4294068433,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":2,"value":100.0,},},
       ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"ui_right_expansor","nodeColour":4286466290,"resourceType":"GMRUILayer","resourceVersion":"2.0",},
+    {"$GMRUILayer":"v1","%Name":"ui_expansor_panel","alignItems":2,"children":[
+        {"$GMRFlexPanel":"","%Name":"fp_screen","alignItems":3,"children":[
+            {"$GMRFlexPanel":"","%Name":"fp_panel","alignItems":1,"children":[
+                {"$GMRFlexPanel":"","%Name":"fp_content","alignItems":2,"children":[
+                    {"$GMRFlexPanel":"","%Name":"fp_newgame","alignItems":2,"children":[
+                        {"$GMRFlexPanel":"","%Name":"fp_text","alignItems":2,"children":[],"flexDirection":0,"height":{"unit":3,"value":80.0,},"justifyContent":1,"name":"fp_text","nodeColour":4286116424,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":130.0,},},
+                        {"$GMRInstance":"v4","%Name":"inst_1DA6C509","colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps",},"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1DA6C509","objectId":{"name":"obj_green_button","path":"objects/obj_green_button/obj_green_button.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
+                      ],"flexDirection":0,"height":{"unit":1,"value":100.0,},"justifyContent":1,"name":"fp_newgame","nodeColour":4294068393,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":1,"value":100.0,},},
+                    {"$GMRSpriteGraphic":"v1","%Name":"graphic_2DD6AB40","animationSpeed":1.0,"colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":4,"resourceType":"InstanceFlexProps","stretchHeight":true,"stretchWidth":true,},"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_2DD6AB40","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_clear_panel","path":"sprites/spr_clear_panel/spr_clear_panel.yy",},"x":0.0,"y":0.0,},
+                  ],"flexDirection":0,"height":{"unit":2,"value":100.0,},"justifyContent":1,"name":"fp_content","nodeColour":4282970714,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":2,"value":100.0,},},
+              ],"flexDirection":0,"height":{"unit":2,"value":50.0,},"justifyContent":0,"name":"fp_panel","nodeColour":4288737864,"positionTop":{"unit":2,"value":1.0,},"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":2,"value":25.4,},},
+          ],"flexDirection":0,"height":{"unit":2,"value":100.0,},"justifyContent":1,"name":"fp_screen","nodeColour":4294068433,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":2,"value":100.0,},},
+      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"ui_expansor_panel","nodeColour":4286466290,"resourceType":"GMRUILayer","resourceVersion":"2.0",},
     {"$GMRUILayer":"v1","%Name":"ui_clock","alignItems":2,"children":[
         {"$GMRFlexPanel":"","%Name":"fp_screen","alignItems":3,"children":[
             {"$GMRFlexPanel":"","%Name":"fp_panel","alignItems":2,"children":[
