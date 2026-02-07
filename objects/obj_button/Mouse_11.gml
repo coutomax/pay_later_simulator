@@ -1,4 +1,7 @@
-flexpanel_node_style_set_position(selfText, flexpanel_edge.top, 0, flexpanel_unit.point);
+if (selfText != undefined)
+{
+	flexpanel_node_style_set_position(selfText, flexpanel_edge.top, 0, flexpanel_unit.point);
+}
 
 if (hasntSave) 
 {

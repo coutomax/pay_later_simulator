@@ -1,9 +1,12 @@
 Validar pra quando um dialog estiver aberto, impedir o click em outros botões, 
-assim como acontece na pausa. 
+assim como acontece na pausa. - OK
+
+Colocar as horas da variavel time no texto da layer - OK
+
+Corrigir problema no script flexpanel_text_finder, onde se não existit o fp_text acaba 
+gerando loop infinito.
 
 avaliar que horas o personagem dorme, ou até mesmo, se haverá um horário para isso.
-
-Colocar as horas da variavel time no texto da layer
 
 Avaliar se crio uma barra ou contador para FOME
 

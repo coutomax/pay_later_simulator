@@ -1,8 +1,6 @@
-persistent = true;
-
 game_seconds = 0;
 game_minutes = 0;
-game_hours = 0;
+game_hours = 8;
 
 game_days = 1;
 game_months = 1;
@@ -19,7 +17,7 @@ function clock_formatter() // formata a data e o horário
 	
 	game_seconds++;
 	
-	if (game_seconds >= room_speed * 0.15)
+	if (game_seconds >= room_speed * 0.15) // game_get_speed(gamespeed_fps)
 	{
 		game_minutes++;
 		game_seconds = 0;

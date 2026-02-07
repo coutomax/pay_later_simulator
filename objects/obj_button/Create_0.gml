@@ -90,6 +90,10 @@ function button_actions()
 				global.energy -= 5;
 				global.stress += 1;
 			break;
+			
+			case "right_expand":
+			
+			break;
 		}
 	}
 }

@@ -1,7 +1,10 @@
 xscale = escalaX * 1.1;
 yscale = escalaY * 0.8;
 
-flexpanel_node_style_set_position(selfText, flexpanel_edge.top, 5, flexpanel_unit.point);
+if (selfText != undefined)
+{
+	flexpanel_node_style_set_position(selfText, flexpanel_edge.top, 5, flexpanel_unit.point);
+}
 
 if (hasntSave)
 {

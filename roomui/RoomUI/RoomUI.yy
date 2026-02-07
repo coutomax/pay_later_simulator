@@ -2,6 +2,18 @@
   "$GMRoomUI":"",
   "%Name":"RoomUI",
   "children":[
+    {"$GMRUILayer":"v1","%Name":"ui_right_expansor","alignItems":2,"children":[
+        {"$GMRFlexPanel":"","%Name":"fp_screen","alignItems":3,"children":[
+            {"$GMRFlexPanel":"","%Name":"fp_panel","alignItems":1,"children":[
+                {"$GMRFlexPanel":"","%Name":"fp_right_expand","alignItems":2,"children":[
+                    {"$GMRFlexPanel":"","%Name":"fp_text","alignItems":2,"children":[],"flexDirection":0,"height":{"unit":1,"value":100.0,},"justifyContent":1,"name":"fp_text","nodeColour":4294068445,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":1,"value":100.0,},},
+                    {"$GMRInstance":"v4","%Name":"inst_6F88E2D","colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":4,"resourceType":"InstanceFlexProps","stretchHeight":true,"stretchWidth":true,},"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6F88E2D","objectId":{"name":"obj_right_expansor","path":"objects/obj_right_expansor/obj_right_expansor.yy",},"properties":[
+                        {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},"propertyId":{"name":"actions","path":"objects/obj_button/obj_button.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"right_expand\"",},
+                      ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
+                  ],"flexDirection":0,"height":{"unit":2,"value":15.0,},"justifyContent":1,"name":"fp_right_expand","nodeColour":4282937074,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":2,"value":17.85,},},
+              ],"flexDirection":0,"height":{"unit":2,"value":50.0,},"justifyContent":0,"name":"fp_panel","nodeColour":4288737864,"positionTop":{"unit":2,"value":1.0,},"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":2,"value":25.4,},},
+          ],"flexDirection":0,"height":{"unit":2,"value":100.0,},"justifyContent":1,"name":"fp_screen","nodeColour":4294068433,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":2,"value":100.0,},},
+      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"ui_right_expansor","nodeColour":4286466290,"resourceType":"GMRUILayer","resourceVersion":"2.0",},
     {"$GMRUILayer":"v1","%Name":"ui_clock","alignItems":2,"children":[
         {"$GMRFlexPanel":"","%Name":"fp_screen","alignItems":3,"children":[
             {"$GMRFlexPanel":"","%Name":"fp_panel","alignItems":2,"children":[
