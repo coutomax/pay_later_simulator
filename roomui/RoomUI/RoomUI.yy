@@ -13,7 +13,7 @@
                   ],"flexDirection":0,"height":{"unit":2,"value":15.0,},"justifyContent":1,"name":"fp_right_expand","nodeColour":4282937074,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":2,"value":17.85,},},
               ],"flexDirection":0,"height":{"unit":2,"value":50.0,},"justifyContent":0,"name":"fp_panel","nodeColour":4288737864,"positionTop":{"unit":2,"value":1.0,},"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":2,"value":25.4,},},
           ],"flexDirection":0,"height":{"unit":2,"value":100.0,},"justifyContent":1,"name":"fp_screen","nodeColour":4294068433,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":2,"value":100.0,},},
-      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"ui_right_expansor","nodeColour":4286466290,"resourceType":"GMRUILayer","resourceVersion":"2.0",},
+      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"ui_right_expansor","nodeColour":4286466290,"resourceType":"GMRUILayer","resourceVersion":"2.0","visible":false,},
     {"$GMRUILayer":"v1","%Name":"ui_expansor_panel","alignItems":2,"children":[
         {"$GMRFlexPanel":"","%Name":"fp_screen","alignItems":3,"children":[
             {"$GMRFlexPanel":"","%Name":"fp_panel","alignItems":1,"children":[

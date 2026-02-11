@@ -6,6 +6,7 @@ yscale = escalaY;
 
 selfLayer = noone;
 selfText = noone;
+back_to_menu = false;
 
 hasntSave = actions == "continue_save" && !global.hasSave
 
@@ -64,8 +65,8 @@ function button_actions()
 				layer_set_visible("ui_quit_without_save", true);			 
 			break;
 		
-			case "back_menu_yes_option":		
-				global.paused = false;
+			case "back_menu_yes_option":	
+				reset();
 				
 				layer_set_visible(self.layer, false);
 				layer_set_visible("ui_bars", false);
@@ -75,8 +76,7 @@ function button_actions()
 				layer_set_visible("ui_pause_menu", false);
 				
 				layer_set_visible("ui_start_menu", true);
-				
-				reset();
+											
 				room_goto(1);
 			break;
 		

@@ -26,4 +26,7 @@ global.year = 1;
 global.x_size = 0;
 global.y_size = 0;
 global.clicked = false;
+
+obj_right_expansor.x_pos = 0;
+obj_right_expansor.image_angle = 0;
 }
