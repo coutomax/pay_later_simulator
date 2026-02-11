@@ -40,99 +40,107 @@ global.year = 1;
 global.x_size = 0;
 global.y_size = 0;
 global.clicked = false;
-//objects
-global.days =
-[
-	{
-		id: 1,
-		name: "Mon",
-	},
-	{
-		id: 2,
-		name: "Tue",
-	},
-	{
-		id: 3,
-		name: "Wed",
-	},
-	{
-		id: 4,
-		name: "Thu",
-	},
-	{
-		id: 5,
-		name: "Fri",
-	},
-	{
-		id: 6,
-		name: "Sat",
-	},
-	{
-		id: 7,
-		name: "Sun",
-	},
-];
 
-global.months =
-[
-	{
-		id: 1,
-		name: "Jan",
-		days: 31
-	},
-	{
-		id: 2,
-		name: "Feb",
-		days: global.year % 4 == 0 ? 29 : 28
-	},
-	{
-		id: 3,
-		name: "Mar",
-		days: 31
-	},
-	{
-		id: 4,
-		name: "Apr",
-		days: 30
-	},
-	{
-		id: 5,
-		name: "May",
-		days: 31
-	},
-	{
-		id: 6,
-		name: "Jun",
-		days: 30
-	},
-	{
-		id: 7,
-		name: "Jul",
-		days: 31
-	},
-	{
-		id: 8,
-		name: "Aug",
-		days: 31
-	},
-	{
-		id: 9,
-		name: "Sep",
-		days: 30
-	},
-	{
-		id: 10,
-		name: "Oct",
-		days: 31
-	},
-	{
-		id: 11,
-		name: "Nov",
-		days: 30
-	},
-	{
-		id: 12,
-		name: "Dec",
-		days: 31
-	}
-];
+
+
+#region Object days
+	global.days =
+	[
+		{
+			id: 1,
+			name: "Mon",
+		},
+		{
+			id: 2,
+			name: "Tue",
+		},
+		{
+			id: 3,
+			name: "Wed",
+		},
+		{
+			id: 4,
+			name: "Thu",
+		},
+		{
+			id: 5,
+			name: "Fri",
+		},
+		{
+			id: 6,
+			name: "Sat",
+		},
+		{
+			id: 7,
+			name: "Sun",
+		},
+	];
+
+#endregion
+
+#region Object months
+	global.months =
+	[
+		{
+			id: 1,
+			name: "Jan",
+			days: 31
+		},
+		{
+			id: 2,
+			name: "Feb",
+			days: global.year % 4 == 0 ? 29 : 28
+		},
+		{
+			id: 3,
+			name: "Mar",
+			days: 31
+		},
+		{
+			id: 4,
+			name: "Apr",
+			days: 30
+		},
+		{
+			id: 5,
+			name: "May",
+			days: 31
+		},
+		{
+			id: 6,
+			name: "Jun",
+			days: 30
+		},
+		{
+			id: 7,
+			name: "Jul",
+			days: 31
+		},
+		{
+			id: 8,
+			name: "Aug",
+			days: 31
+		},
+		{
+			id: 9,
+			name: "Sep",
+			days: 30
+		},
+		{
+			id: 10,
+			name: "Oct",
+			days: 31
+		},
+		{
+			id: 11,
+			name: "Nov",
+			days: 30
+		},
+		{
+			id: 12,
+			name: "Dec",
+			days: 31
+		}
+	];
+	
+#endregion

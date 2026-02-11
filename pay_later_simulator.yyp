@@ -62,6 +62,7 @@
     {"id":{"name":"flexpanel_text_finder","path":"scripts/flexpanel_text_finder/flexpanel_text_finder.yy",},},
     {"id":{"name":"initializer","path":"scripts/initializer/initializer.yy",},},
     {"id":{"name":"reset","path":"scripts/reset/reset.yy",},},
+    {"id":{"name":"text_set_alpha","path":"scripts/text_set_alpha/text_set_alpha.yy",},},
     {"id":{"name":"snd_button_click_down","path":"sounds/snd_button_click_down/snd_button_click_down.yy",},},
     {"id":{"name":"snd_button_click_up","path":"sounds/snd_button_click_up/snd_button_click_up.yy",},},
     {"id":{"name":"snd_keyboard","path":"sounds/snd_keyboard/snd_keyboard.yy",},},

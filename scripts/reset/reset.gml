@@ -22,4 +22,8 @@ global.day = 1;
 global.week = 1;
 global.month = 1;
 global.year = 1;
+
+global.x_size = 0;
+global.y_size = 0;
+global.clicked = false;
 }

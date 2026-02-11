@@ -11,9 +11,8 @@ flex_panel_node = layer_get_flexpanel_node(panel_layer);
 flex_panel_text = flexpanel_node_get_child(flex_panel_node, "fp_text");
 flex_panel_panel = flexpanel_node_get_child(flex_panel_node, "fp_content");
 
-
-text_element_id = layer_text_get_id(panel_layer, "text_bills");
-layer_text_alpha(text_element_id, 0);
+text_set_alpha(panel_layer, $"txt_bills", alphaText);
+text_set_alpha(panel_layer, $"txt_{actions}", alphaText);
 		
 //width : 326, marginRight : 0, marginTop : 0, marginBottom : 0, height : 486
 var _flex_panel_layout = flexpanel_node_layout_get_position(flex_panel_panel);
@@ -45,5 +44,9 @@ button_desapear = function()
 	
 	image_alpha = clamp(alpha, 0, 1);
 	alphaText = clamp(alphaText, 0, 1);
-	layer_text_alpha(text_element_id, alphaText);
+	
+	//Ajustando os textos
+	text_set_alpha(panel_layer, "txt_bills", alphaText);
+	text_set_alpha(panel_layer, $"txt_{actions}", alphaText);
+	
 }

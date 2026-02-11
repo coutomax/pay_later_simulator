@@ -17,7 +17,7 @@ function clock_formatter() // formata a data e o horário
 	
 	game_seconds++;
 	
-	if (game_seconds >= room_speed * 0.15) // game_get_speed(gamespeed_fps)
+	if (game_seconds >= room_speed * 0.015) // game_get_speed(gamespeed_fps)
 	{
 		game_minutes++;
 		game_seconds = 0;
