@@ -78,6 +78,7 @@ function button_actions()
 				layer_set_visible("ui_start_menu", true);
 											
 				room_goto(1);
+				
 			break;
 		
 			case "back_menu_no_option":

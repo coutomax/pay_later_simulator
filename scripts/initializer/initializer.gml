@@ -12,6 +12,9 @@ global.hadDinner = false;
 global.hadBreakfast = false;
 global.hadSleep = false;
 
+//controllers - booleanos
+global.clicked = false;
+
 //numericos
 global.max_energy = 100;
 global.max_stress = 100;
@@ -36,42 +39,220 @@ global.month_day = 1;
 global.month = 1;
 global.year = 1;
 
-//controllers
+//controllers - numéricos
 global.x_size = 0;
 global.y_size = 0;
-global.clicked = false;
 
+global.game_data = {};
 
+#region Object bills
+
+	global.bills =
+	[
+		{
+			_id: 0,
+			tag: "food_bill_check",
+			value: 0.0,
+			status: [
+				{
+					__id: 0,
+					description: "unmarked"
+				},
+				{
+					__id: 1,
+					description: "checked"
+				},
+				{
+					__id: 2,
+					description: "canceled"
+				},
+			]
+		},
+		{
+			_id: 1,
+			tag: "rent_bill_check",
+			value: 0.0,
+			status: [
+				{
+					__id: 0,
+					description: "unmarked"
+				},
+				{
+					__id: 1,
+					description: "checked"
+				},
+				{
+					__id: 2,
+					description: "canceled"
+				},
+			]
+		},
+		{
+			_id: 2,
+			tag: "power_bill_check",
+			value: 0.0,
+			status: [
+				{
+					_id: 0,
+					description: "unmarked"
+				},
+				{
+					_id: 1,
+					description: "checked"
+				},
+				{
+					_id: 2,
+					description: "canceled"
+				},
+			]
+		},
+		{
+			_id: 3,
+			tag: "water_bill_check",
+			value: 0.0,
+			status: [
+				{
+					_id: 0,
+					description: "unmarked"
+				},
+				{
+					_id: 1,
+					description: "checked"
+				},
+				{
+					_id: 2,
+					description: "canceled"
+				},
+			]
+		},
+		{
+			_id: 4,
+			tag: "internet_bill_check",
+			value: 0.0,
+			status: [
+				{
+					_id: 0,
+					description: "unmarked"
+				},
+				{
+					_id: 1,
+					description: "checked"
+				},
+				{
+					_id: 2,
+					description: "canceled"
+				},
+			]
+		},
+		{
+			_id: 5,
+			tag: "taxes_bill_check",
+			value: 0.0,
+			status: [
+				{
+					_id: 0,
+					description: "unmarked"
+				},
+				{
+					_id: 1,
+					description: "checked"
+				},
+				{
+					_id: 2,
+					description: "canceled"
+				},
+			]
+		},
+		{
+			_id: 6,
+			tag: "credit_card_bill_check",
+			value: 0.0,
+			status: [
+				{
+					_id: 0,
+					description: "unmarked"
+				},
+				{
+					_id: 1,
+					description: "checked"
+				},
+				{
+					_id: 2,
+					description: "canceled"
+				},
+			]
+		},
+		{
+			_id: 7,
+			tag: "loan_check",
+			value: 0.0,
+			status: [
+				{
+					_id: 0,
+					description: "unmarked"
+				},
+				{
+					_id: 1,
+					description: "checked"
+				},
+				{
+					_id: 2,
+					description: "canceled"
+				},
+			]
+		},
+		{
+			_id: 8,
+			tag: "moneylender_check",
+			value: 0.0,
+			status: [
+				{
+					_id: 0,
+					description: "unmarked"
+				},
+				{
+					_id: 1,
+					description: "checked"
+				},
+				{
+					_id: 2,
+					description: "canceled"
+				},
+			]
+		}
+	];
+
+#endregion
 
 #region Object days
 	global.days =
 	[
 		{
-			id: 1,
+			_id: 1,
 			name: "Mon",
 		},
 		{
-			id: 2,
+			_id: 2,
 			name: "Tue",
 		},
 		{
-			id: 3,
+			_id: 3,
 			name: "Wed",
 		},
 		{
-			id: 4,
+			_id: 4,
 			name: "Thu",
 		},
 		{
-			id: 5,
+			_id: 5,
 			name: "Fri",
 		},
 		{
-			id: 6,
+			_id: 6,
 			name: "Sat",
 		},
 		{
-			id: 7,
+			_id: 7,
 			name: "Sun",
 		},
 	];
@@ -82,62 +263,62 @@ global.clicked = false;
 	global.months =
 	[
 		{
-			id: 1,
+			_id: 1,
 			name: "Jan",
 			days: 31
 		},
 		{
-			id: 2,
+			_id: 2,
 			name: "Feb",
 			days: global.year % 4 == 0 ? 29 : 28
 		},
 		{
-			id: 3,
+			_id: 3,
 			name: "Mar",
 			days: 31
 		},
 		{
-			id: 4,
+			_id: 4,
 			name: "Apr",
 			days: 30
 		},
 		{
-			id: 5,
+			_id: 5,
 			name: "May",
 			days: 31
 		},
 		{
-			id: 6,
+			_id: 6,
 			name: "Jun",
 			days: 30
 		},
 		{
-			id: 7,
+			_id: 7,
 			name: "Jul",
 			days: 31
 		},
 		{
-			id: 8,
+			_id: 8,
 			name: "Aug",
 			days: 31
 		},
 		{
-			id: 9,
+			_id: 9,
 			name: "Sep",
 			days: 30
 		},
 		{
-			id: 10,
+			_id: 10,
 			name: "Oct",
 			days: 31
 		},
 		{
-			id: 11,
+			_id: 11,
 			name: "Nov",
 			days: 30
 		},
 		{
-			id: 12,
+			_id: 12,
 			name: "Dec",
 			days: 31
 		}
