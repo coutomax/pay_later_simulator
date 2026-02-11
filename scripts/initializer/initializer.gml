@@ -36,6 +36,10 @@ global.month_day = 1;
 global.month = 1;
 global.year = 1;
 
+//controllers
+global.x_size = 0;
+global.y_size = 0;
+global.clicked = false;
 //objects
 global.days =
 [

@@ -34,6 +34,7 @@ function button_actions()
 				room_goto(0);
 				layer_set_visible("ui_bars", true);
 				layer_set_visible("ui_clock", true);
+				layer_set_visible("ui_right_expansor", true);
 				layer_set_visible("ui_start_menu", false);
 			break;
 		
@@ -69,6 +70,8 @@ function button_actions()
 				layer_set_visible(self.layer, false);
 				layer_set_visible("ui_bars", false);
 				layer_set_visible("ui_clock", false);
+				layer_set_visible("ui_right_expansor", false);
+				layer_set_visible("ui_expansor_panel", false);
 				layer_set_visible("ui_pause_menu", false);
 				
 				layer_set_visible("ui_start_menu", true);

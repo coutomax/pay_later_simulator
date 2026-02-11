@@ -2,5 +2,5 @@ event_inherited();
 
 if (!animating)
 {
-	clicked = !clicked
+	global.clicked = !global.clicked
 }

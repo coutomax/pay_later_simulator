@@ -1,6 +1,5 @@
 event_inherited();
 
-clicked = false;
 animating = false;
 
 //posicao do botao
@@ -40,7 +39,7 @@ panelLayer = "ui_expansor_panel";
 flexPanelNode = layer_get_flexpanel_node(panelLayer);
 flexPanelPanel = flexpanel_node_get_child(flexPanelNode, "fp_content");
 
-//width : 326, marginRight : 0, marginTop : 0, marginBottom : 0, height : 360
+//width : 326, marginRight : 0, marginTop : 0, marginBottom : 0, height : 486
 var _flex_panel_layout = flexpanel_node_layout_get_position(flexPanelPanel);
 
 max_x = _flex_panel_layout.width;
@@ -50,11 +49,17 @@ layer_set_visible(panelLayer, false);
 flexpanel_node_style_set_width(flexPanelPanel, 50, flexpanel_unit.point);
 flexpanel_node_style_set_height(flexPanelPanel, 50, flexpanel_unit.point);
 
+//lista de components do flexpanel interno
+
+//flexpanel_node_style_set_display(flexButton, flexpanel_display.flex);
+
+
 function expand_animation()
 {
-	if (clicked)
+	if (global.clicked)
 	{
-		if (x_pos <= max_pos){
+		if (x_pos <= max_pos)
+		{
 			layer_set_visible(panelLayer, true);
 			x_pos = lerp(x_pos, max_pos, acceleration);			
 			image_angle = lerp(image_angle, max_angle, rotation);
@@ -63,11 +68,13 @@ function expand_animation()
 			if (panel_w <= max_x)
 			{
 				panel_w = lerp(panel_w, max_x, acceleration);
+				global.x_size = panel_w;
 			}
 			
 			if (panel_h <= max_y)
 			{
 				panel_h = lerp(panel_h, max_y, acceleration);
+				global.y_size = panel_h;
 			}
 		}
 	}
@@ -82,25 +89,27 @@ function expand_animation()
 			if (panel_w >= 1)
 			{
 				panel_w = lerp(panel_w, 1, acceleration);
+				global.x_size = panel_w;
 			}
 			
 			if (panel_h >= 1)
 			{
 				panel_h = lerp(panel_h, 1, acceleration);
+				global.y_size = panel_h;
 			}
 		}
 	}
 	
 	if (animating)
 	{
-		if (x_pos >= max_pos - 1 && clicked)
+		if (x_pos >= max_pos - 1 && global.clicked)
 		{
 			animating = false;
 		}
 		else
-			if (x_pos <= 2 && !clicked)
+			if (x_pos <= 2 && !global.clicked)
 			{
 				animating = false;
 			}
-	}	
+	}
 }

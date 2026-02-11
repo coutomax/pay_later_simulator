@@ -3,6 +3,10 @@ assim como acontece na pausa. - OK
 
 Colocar as horas da variavel time no texto da layer - OK
 
+Criar um sistema de save.
+
+Arrumar bug ao abrir o painel de contas, aonde o título fica bugado visualmente. - testar com struct
+
 Corrigir problema no script flexpanel_text_finder, onde se não existit o fp_text acaba 
 gerando loop infinito.
 
