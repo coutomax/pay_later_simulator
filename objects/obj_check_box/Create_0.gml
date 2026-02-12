@@ -16,6 +16,7 @@ flex_panel_panel = flexpanel_node_get_child(flex_panel_node, "fp_content");
 
 text_set_alpha(panel_layer, $"txt_bills", alphaText);
 text_set_alpha(panel_layer, $"txt_{actions}", alphaText);
+text_set_alpha(panel_layer, $"txt_total", alphaText);
 		
 var _flex_panel_layout = flexpanel_node_layout_get_position(flex_panel_panel);
 
@@ -62,5 +63,6 @@ button_desapear = function()
 	//Ajusta o alpha dos textos
 	text_set_alpha(panel_layer, "txt_bills", alphaText);
 	text_set_alpha(panel_layer, $"txt_{actions}", alphaText);
+	text_set_alpha(panel_layer, $"txt_total", alphaText);
 	
 }
