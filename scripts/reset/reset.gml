@@ -14,7 +14,7 @@ function reset(){
 	global.max_life = 100;
 
 	global.energy = 100;
-	global.stress = 100;
+	global.stress = 0;
 	global.life = 100;
 
 	global.minutes = 1;
@@ -33,6 +33,9 @@ function reset(){
 	obj_right_expansor.x_pos = 0;
 	obj_right_expansor.image_angle = 0;
 
-	obj_check_box.image_index = 1;
-	
+
+	if (instance_exists(obj_check_box))
+	{
+		obj_check_box.image_index = 1;
+	}
 }
