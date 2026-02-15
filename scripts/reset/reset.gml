@@ -30,7 +30,7 @@ function reset(){
 	global.clicked					= false;
 
 	//object reset
-	obj_right_expansor.x_pos		= 0;
+	obj_right_expansor.ex.x_pos		= 0;
 	obj_right_expansor.image_angle	= 0;
 
 

@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function ui_expansor_animate(obj, panel_name, animating){
+function ui_expansor_animate(obj, panel_name, animating, flipping){
 
 	var ex = 
 	{
@@ -29,7 +29,7 @@ function ui_expansor_animate(obj, panel_name, animating){
 		obj_getter			:		obj,
 		panel				:		panel_name,
 		is_animating		:		animating,
-		
+		flip				:		flipping,
 	
 		init:			function ()
 		{
@@ -65,11 +65,15 @@ function ui_expansor_animate(obj, panel_name, animating){
 		{		
 			if (global.clicked)
 			{				
+				show_debug_message(obj_getter.actions);
 				if (self.x_pos <= self.max_pos)
 				{
 					layer_set_visible(panel, true);
 					self.x_pos					= lerp(self.x_pos, self.max_pos, self.acceleration);
-					obj_getter.image_angle		= lerp(obj_getter.image_angle, self.max_angle, self.obj_rotation);
+					if (flip)
+					{
+						obj_getter.image_angle		= lerp(obj_getter.image_angle, self.max_angle, self.obj_rotation);
+					}					
 					self.is_animating			= true;
 										
 					if (self.panel_w <= self.max_x)
@@ -90,7 +94,10 @@ function ui_expansor_animate(obj, panel_name, animating){
 				if (self.x_pos >= 0)
 				{
 					self.x_pos					= lerp(self.x_pos, self.min_pos, self.acceleration);
-					obj_getter.image_angle		= lerp(obj_getter.image_angle, 0, self.obj_rotation);
+					if (flip)
+					{
+						obj_getter.image_angle		= lerp(obj_getter.image_angle, 0, self.obj_rotation);
+					}					
 					self.is_animatig			= true;
 					
 					if (self.panel_w >= 1)
@@ -107,9 +114,9 @@ function ui_expansor_animate(obj, panel_name, animating){
 				}
 			}
 			
-			if (self.obj_button_panel != noone)
+			if (self.obj_flex_button != noone)
 			{
-				flexpanel_node_style_set_position(self.obj_button_panel, flexpanel_edge.left, self.x_pos, flexpanel_unit.point);
+				flexpanel_node_style_set_position(self.obj_flex_button, flexpanel_edge.left, self.x_pos, flexpanel_unit.point);
 			}
 
 			if (self.panel_content_child != noone)
