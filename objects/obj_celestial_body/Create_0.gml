@@ -1,5 +1,5 @@
-escalaX = image_xscale;
-escalaY = image_yscale;
+escalaX			= image_xscale;
+escalaY			= image_yscale;
 
-xscale = escalaX;
-yscale = escalaY;
+xscale			= escalaX;
+yscale			= escalaY;
