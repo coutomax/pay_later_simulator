@@ -1,3 +1,7 @@
+colocar o global.clicked = true ao clicar, e mudar para false quando animating for false.
+Depois, adicionar a lógica da animação dentro do if(global.clicked) {} com um controle 
+de opened = true/false
+
 Validar pra quando um dialog estiver aberto, impedir o click em outros botões, 
 assim como acontece na pausa. - OK
 

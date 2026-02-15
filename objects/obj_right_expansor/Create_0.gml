@@ -1,6 +1,12 @@
 event_inherited();
 
-animating = false;
+animating		= false;
+
+ex				= ui_expansor_animate(self, "ui_expansor_panel", animating);
+
+ex.init();
+
+/*
 
 //posicao do botao
 x_pos = 0;
@@ -113,3 +119,4 @@ function expand_animation()
 			}
 	}
 }
+*/

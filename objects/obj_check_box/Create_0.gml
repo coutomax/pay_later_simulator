@@ -54,7 +54,7 @@ button_desapear = function()
 	{
 		if (image_alpha >= 0 && global.y_size <= max_y)
 		{
-			alpha = lerp(image_alpha, 0, .3);
+			alpha = lerp(image_alpha, 0, .8);
 			alphaText = 0
 		}
 	}	
