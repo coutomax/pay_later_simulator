@@ -1,5 +1,3 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function ui_expansor_animate(obj, panel_name, animating, flipping){
 
 	var ex = 
@@ -61,11 +59,15 @@ function ui_expansor_animate(obj, panel_name, animating, flipping){
 		
 		},
 		
-		update:			function ()
+		update:			function (action)
 		{		
 			if (global.clicked)
-			{				
-				show_debug_message(obj_getter.actions);
+			{	
+				if (global.current_action != action)
+				{
+					obj_getter.image_alpha		= 0;
+				}
+				
 				if (self.x_pos <= self.max_pos)
 				{
 					layer_set_visible(panel, true);
@@ -112,6 +114,11 @@ function ui_expansor_animate(obj, panel_name, animating, flipping){
 						global.y_size			= self.panel_h;
 					}
 				}
+				
+				if (global.current_action != action && self.x_pos <= 3)
+				{
+					obj_getter.image_alpha		= 1;
+				}
 			}
 			
 			if (self.obj_flex_button != noone)
@@ -124,7 +131,7 @@ function ui_expansor_animate(obj, panel_name, animating, flipping){
 				flexpanel_node_style_set_width(self.panel_content_child, self.panel_w, flexpanel_unit.point);
 				flexpanel_node_style_set_height(self.panel_content_child, self.panel_h, flexpanel_unit.point);
 			}
-			
+						
 			if (self.is_animating)
 			{
 				if (self.x_pos >= self.max_pos -1 && global.clicked)
@@ -139,7 +146,7 @@ function ui_expansor_animate(obj, panel_name, animating, flipping){
 					}
 				}
 			}
-			
+					
 			return {
                 x_pos  :	self.x_pos,
                 w      :	self.panel_w,
