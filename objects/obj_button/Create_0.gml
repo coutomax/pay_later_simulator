@@ -1,21 +1,20 @@
-escalaX = image_xscale;
-escalaY = image_yscale;
+escalaX			= image_xscale;
+escalaY			= image_yscale;
 
-xscale = escalaX;
-yscale = escalaY;
+xscale			= escalaX;
+yscale			= escalaY;
 
-selfLayer = noone;
-selfText = noone;
-back_to_menu = false;
+selfLayer		= noone;
+selfText		= noone;
+back_to_menu	= false;
 
-hasntSave = actions == "continue_save" && !global.hasSave
+hasntSave		= actions == "continue_save" && !global.hasSave
 
 #region recebe os dados corretos de cada botão
 
-	getLayerName = layer_get_name(self.layer);
-	
-	selfLayer = layer_get_flexpanel_node(getLayerName);	
-	selfText = flexpanel_text_finder(selfLayer, $"fp_{actions}");
+	getLayerName	= layer_get_name(self.layer);	
+	selfLayer		= layer_get_flexpanel_node(getLayerName);	
+	selfText		= flexpanel_text_finder(selfLayer, $"fp_{actions}");
 
 #endregion
 
@@ -106,7 +105,7 @@ function button_actions()
 
 	if (hasntSave)
 	{
-		image_index = 2;
+		image_index			= 2;
 	}
 
 #endregion

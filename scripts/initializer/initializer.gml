@@ -5,74 +5,69 @@
 */
 
 //booleanos
-global.paused = false;
-global.hasSave = false;
-global.hadLunch = false;
-global.hadDinner = false;
-global.hadBreakfast = false;
-global.hadSleep = false;
+global.paused				= false;
+global.hasSave				= false;
+global.hadLunch				= false;
+global.hadDinner			= false;
+global.hadBreakfast			= false;
+global.hadSleep				= false;
 
 //controllers - booleanos
-global.clicked = false;
+global.clicked				= false;
 
 //numericos
-global.max_energy = 100;
-global.max_stress = 100;
-global.max_life = 100;
-
-global.money = 2000;
-
-global.energy = 100;
-global.stress = 0;
-global.life = 100;
-
-global.worked_hours = 0;
-global.day_worked_hours = 0;
-
-global.minutes = 1;
-global.hours = 1;
-
-global.day = 1;
-global.week = 1;
-global.week_day = 1;
-global.month_day = 1;
-global.month = 1;
-global.year = 1;
+global.max_energy			= 100;
+global.max_stress			= 100;
+global.max_life				= 100;
+global.money				= 2000;
+global.energy				= 100;
+global.stress				= 0;
+global.life					= 100;
+global.worked_hours			= 0;
+global.day_worked_hours		= 0;
+global.minutes				= 1;
+global.hours				= 1;
+global.day					= 1;
+global.week					= 1;
+global.week_day				= 1;
+global.month_day			= 1;
+global.month				= 1;
+global.year					= 1;
 
 //controllers - numéricos
-global.x_size = 0;
-global.y_size = 0;
+global.x_size				= 0;
+global.y_size				= 0;
 
-global.game_data = {};
+global.game_data			= {};
 
 #region Object bills
 
 	global.bills =
 	[
 		{
-			_id: 0,
-			tag: "food_bill_check",
-			value: 0.0,
-			status: [
+			_id		:		0,
+			tag		:		"food_bill_check",
+			value	:		0.0,
+			status	:		[
 				{
-					__id: 0,
-					description: "unmarked"
+					__id		:		0,
+					description	:		"unmarked"
 				},
 				{
-					__id: 1,
-					description: "checked"
+					__id		:		1,
+					description	:		"checked"
 				},
 				{
-					__id: 2,
-					description: "canceled"
+					__id		:		2,
+					description	:		"canceled"
 				},
 			]
 		},
 		{
-			_id: 1,
-			tag: "rent_bill_check",
-			value: 0.0,
-			status: [
+			_id		:		1,
+			tag		:		"rent_bill_check",
+			value	:		0.0,
+			status:			[
 				{
 					__id: 0,
 					description: "unmarked"

@@ -1,5 +1,5 @@
-xscale = escalaX * 1.1;
-yscale = escalaY * 0.8;
+xscale		= escalaX * 1.1;
+yscale		= escalaY * 0.8;
 
 if (selfText != undefined)
 {
@@ -8,11 +8,11 @@ if (selfText != undefined)
 
 if (hasntSave)
 {
-	image_index = 3;
+	image_index			= 3;
 }
 else
 {
-	image_index = 1;
+	image_index			= 1;
 }
 
 audio_play_sound(snd_button_click_down, 0, false, 0.05);

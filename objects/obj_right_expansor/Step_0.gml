@@ -1,5 +1,4 @@
 event_inherited();
 
-var response = ex.update();
-
-animating = response.anim;
+var response	= ex.update();
+animating		= response.anim;
