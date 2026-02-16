@@ -66,7 +66,6 @@ function ui_expansor_animate(obj, panel_name, animating, flipping){
 			{	
 				if (global.current_action != action)
 				{
-					self.obj_getter.image_alpha		= 0;
 					self.is_visible					= false;
 				}
 				else
@@ -97,7 +96,7 @@ function ui_expansor_animate(obj, panel_name, animating, flipping){
 			}
 			else
 			{
-				self.is_visible						= true;
+				
 				
 				if (self.x_pos >= 0)
 				{
@@ -123,7 +122,7 @@ function ui_expansor_animate(obj, panel_name, animating, flipping){
 				
 				if (global.current_action != action && self.x_pos <= 3)
 				{
-					self.obj_getter.image_alpha		= 1;
+					self.is_visible						= true;
 				}
 			}
 			
