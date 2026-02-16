@@ -12,6 +12,8 @@ else
 	image_index			= 0;
 }
 
-audio_play_sound(snd_button_click_up, 0, false, 0.05);
-
-button_actions();
+if (visible)
+{
+	audio_play_sound(snd_button_click_up, 0, false, 0.05);
+	button_actions();
+}

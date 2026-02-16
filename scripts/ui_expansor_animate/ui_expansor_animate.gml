@@ -22,7 +22,8 @@ function ui_expansor_animate(obj, panel_name, animating, flipping){
 		acceleration		:		0.1,
 		obj_rotation		:		0.07,
 		panel_w				:		50,
-		panel_h				:		50,	
+		panel_h				:		50,
+		is_visible			:		false,
 		
 		obj_getter			:		obj,
 		panel				:		panel_name,
@@ -66,33 +67,38 @@ function ui_expansor_animate(obj, panel_name, animating, flipping){
 				if (global.current_action != action)
 				{
 					self.obj_getter.image_alpha		= 0;
+					self.is_visible					= false;
 				}
-				
-				if (self.x_pos <= self.max_pos)
+				else
 				{
-					layer_set_visible(self.panel, true);									
-					self.x_pos						= lerp(self.x_pos, self.max_pos, self.acceleration);
-					if (self.flip)
+					if (self.x_pos <= self.max_pos)
 					{
-						self.obj_getter.image_angle	= lerp(self.obj_getter.image_angle, self.max_angle, self.obj_rotation);
-					}					
-					self.is_animating				= true;
+						layer_set_visible(self.panel, true);									
+						self.x_pos						= lerp(self.x_pos, self.max_pos, self.acceleration);
+						if (self.flip)
+						{
+							self.obj_getter.image_angle	= lerp(self.obj_getter.image_angle, self.max_angle, self.obj_rotation);
+						}					
+						self.is_animating				= true;
 										
-					if (self.panel_w <= self.max_x)
-					{
-						self.panel_w				= lerp(self.panel_w, self.max_x, self.acceleration);
-						global.x_size				= self.panel_w;
-					}
+						if (self.panel_w <= self.max_x)
+						{
+							self.panel_w				= lerp(self.panel_w, self.max_x, self.acceleration);
+							global.x_size				= self.panel_w;
+						}
 					
-					if (self.panel_h <= self.max_y)
-					{
-						self.panel_h				= lerp(self.panel_h, self.max_y, self.acceleration);
-						global.y_size				= self.panel_h;
+						if (self.panel_h <= self.max_y)
+						{
+							self.panel_h				= lerp(self.panel_h, self.max_y, self.acceleration);
+							global.y_size				= self.panel_h;
+						}
 					}
 				}
 			}
 			else
 			{
+				self.is_visible						= true;
+				
 				if (self.x_pos >= 0)
 				{
 					self.x_pos						= lerp(self.x_pos, self.min_pos, self.acceleration);
@@ -134,7 +140,7 @@ function ui_expansor_animate(obj, panel_name, animating, flipping){
 				var min_panel_w						= flexpanel_node_style_get_width(self.panel_content_child);
 				var min_panel_h						= flexpanel_node_style_get_height(self.panel_content_child);
 				
-				if (min_panel_w.value <= 5 && min_panel_h.value <= 5)
+				if (min_panel_w.value <= 15 && min_panel_h.value <= 15)
 				{
 					layer_set_visible(self.panel, false);
 				}
@@ -156,10 +162,11 @@ function ui_expansor_animate(obj, panel_name, animating, flipping){
 			}
 					
 			return {
-                x_pos  :	self.x_pos,
-                w      :	self.panel_w,
-                h      :	self.panel_h,
-                anim   :	self.is_animating
+                x_pos		:	self.x_pos,
+                w			:	self.panel_w,
+                h			:	self.panel_h,
+                anim		:	self.is_animating,
+				is_visible	:	self.is_visible
             };
 		}
 	}
