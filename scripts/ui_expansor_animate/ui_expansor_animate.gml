@@ -30,7 +30,7 @@ function ui_expansor_animate(obj, panel_name, animating, flipping){
 		is_animating		:		animating,
 		flip				:		flipping,
 	
-		init:			function ()
+		init	:			function ()
 		{
 		
 			//dados do objeto
@@ -60,24 +60,27 @@ function ui_expansor_animate(obj, panel_name, animating, flipping){
 		
 		},
 		
-		update:			function (action)
+		update	:			function (action)
 		{		
 			if (global.clicked)
 			{	
 				if (global.current_action != action)
 				{
-					self.is_visible					= false;
+					self.is_visible						= false;
 				}
 				else
 				{
 					if (self.x_pos <= self.max_pos)
 					{
-						layer_set_visible(self.panel, true);									
+						layer_set_visible(self.panel, true);
+						
 						self.x_pos						= lerp(self.x_pos, self.max_pos, self.acceleration);
+						
 						if (self.flip)
 						{
 							self.obj_getter.image_angle	= lerp(self.obj_getter.image_angle, self.max_angle, self.obj_rotation);
 						}					
+						
 						self.is_animating				= true;
 										
 						if (self.panel_w <= self.max_x)
@@ -96,15 +99,15 @@ function ui_expansor_animate(obj, panel_name, animating, flipping){
 			}
 			else
 			{
-				
-				
 				if (self.x_pos >= 0)
 				{
 					self.x_pos						= lerp(self.x_pos, self.min_pos, self.acceleration);
+					
 					if (self.flip)
 					{
 						self.obj_getter.image_angle	= lerp(self.obj_getter.image_angle, 0, self.obj_rotation);
 					}					
+					
 					self.is_animatig				= true;
 					
 					if (self.panel_w >= 1)
@@ -122,7 +125,7 @@ function ui_expansor_animate(obj, panel_name, animating, flipping){
 				
 				if (global.current_action != action && self.x_pos <= 3)
 				{
-					self.is_visible						= true;
+					self.is_visible					= true;
 				}
 			}
 			
