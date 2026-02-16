@@ -1,8 +1,10 @@
 event_inherited();
 
+self_panel		= "ui_shop_panel";
 animating		= false;
 flipping		= false;
 
-ex				= ui_expansor_animate(self, "ui_expansor_panel", animating, flipping);
+//ui_shop_panel
+ex				= ui_expansor_animate(self, self_panel, animating, flipping);
 
 ex.init();

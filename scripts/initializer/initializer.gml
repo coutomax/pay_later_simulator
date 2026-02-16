@@ -39,7 +39,6 @@ global.x_size				= 0;
 global.y_size				= 0;
 
 //controlers - string
-
 global.current_action		= noone;
 
 global.game_data			= {};

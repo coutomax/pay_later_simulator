@@ -1,4 +1,8 @@
 event_inherited();
 
-var response	= ex.update(actions);
-animating		= response.anim;
+if (global.current_action == actions)
+{
+	var response	= ex.update(actions);
+	animating		= response.anim;
+}
+

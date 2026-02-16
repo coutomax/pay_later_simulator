@@ -7,7 +7,7 @@ alphaText				= 0;
 object					= {};
 button_status			= {};
 
-panel_layer				= "ui_expansor_panel";
+panel_layer				= layer_get_name(self.layer);
 flex_panel_node			= layer_get_flexpanel_node(panel_layer);
 flex_panel_text			= flexpanel_node_get_child(flex_panel_node, "fp_text");
 flex_panel_panel		= flexpanel_node_get_child(flex_panel_node, "fp_content");
@@ -18,10 +18,10 @@ text_set_alpha(panel_layer, $"txt_{actions}_value", alphaText);
 text_set_alpha(panel_layer, "txt_total", alphaText);
 text_set_alpha(panel_layer, "txt_value", alphaText);
 		
-var _flex_panel_layout = flexpanel_node_layout_get_position(flex_panel_panel);
+var _flex_panel_layout	= flexpanel_node_layout_get_position(flex_panel_panel);
 
-max_x			= _flex_panel_layout.width;
-max_y			= _flex_panel_layout.height;
+max_x					= _flex_panel_layout.width;
+max_y					= _flex_panel_layout.height;
 
 #region busca o objeto referente ao botão correto
 
@@ -29,7 +29,7 @@ max_y			= _flex_panel_layout.height;
 	{
 		if (global.bills[i].tag == actions)
 		{
-			object			= global.bills[i];
+			object		= global.bills[i];
 		}
 	}
 

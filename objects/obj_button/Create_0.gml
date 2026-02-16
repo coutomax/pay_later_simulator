@@ -97,6 +97,10 @@ function button_actions()
 			case "right_expand":
 			
 			break;
+			
+			case "shop_expand":
+			
+			break;
 		}
 	}
 }

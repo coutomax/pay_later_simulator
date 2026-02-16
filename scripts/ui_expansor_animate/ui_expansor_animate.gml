@@ -33,9 +33,9 @@ function ui_expansor_animate(obj, panel_name, animating, flipping){
 		{
 		
 			//dados do objeto
-			self.obj_layer				= layer_get_name(obj_getter.layer);
+			self.obj_layer				= layer_get_name(self.obj_getter.layer);
 			self.obj_flex_node			= layer_get_flexpanel_node(self.obj_layer);
-			self.obj_flex_button		= flexpanel_node_get_child(self.obj_flex_node, $"fp_{obj_getter.actions}");
+			self.obj_flex_button		= flexpanel_node_get_child(self.obj_flex_node, $"fp_{self.obj_getter.actions}");
 			self.obj_button_panel		= flexpanel_node_get_child(self.obj_flex_node, "fp_panel");
 						
 			var _flex_layout			= flexpanel_node_layout_get_position(self.obj_flex_button);
@@ -65,29 +65,29 @@ function ui_expansor_animate(obj, panel_name, animating, flipping){
 			{	
 				if (global.current_action != action)
 				{
-					obj_getter.image_alpha		= 0;
+					self.obj_getter.image_alpha		= 0;
 				}
 				
 				if (self.x_pos <= self.max_pos)
 				{
-					layer_set_visible(panel, true);
-					self.x_pos					= lerp(self.x_pos, self.max_pos, self.acceleration);
+					layer_set_visible(panel, true);									
+					self.x_pos						= lerp(self.x_pos, self.max_pos, self.acceleration);
 					if (flip)
 					{
-						obj_getter.image_angle		= lerp(obj_getter.image_angle, self.max_angle, self.obj_rotation);
+						self.obj_getter.image_angle	= lerp(self.obj_getter.image_angle, self.max_angle, self.obj_rotation);
 					}					
-					self.is_animating			= true;
+					self.is_animating				= true;
 										
 					if (self.panel_w <= self.max_x)
 					{
-						self.panel_w			= lerp(self.panel_w, self.max_x, self.acceleration);
-						global.x_size			= self.panel_w;
+						self.panel_w				= lerp(self.panel_w, self.max_x, self.acceleration);
+						global.x_size				= self.panel_w;
 					}
 					
 					if (self.panel_h <= self.max_y)
 					{
-						self.panel_h			= lerp(self.panel_h, self.max_y, self.acceleration);
-						global.y_size			= self.panel_h;
+						self.panel_h				= lerp(self.panel_h, self.max_y, self.acceleration);
+						global.y_size				= self.panel_h;
 					}
 				}
 			}
@@ -95,29 +95,29 @@ function ui_expansor_animate(obj, panel_name, animating, flipping){
 			{
 				if (self.x_pos >= 0)
 				{
-					self.x_pos					= lerp(self.x_pos, self.min_pos, self.acceleration);
+					self.x_pos						= lerp(self.x_pos, self.min_pos, self.acceleration);
 					if (flip)
 					{
-						obj_getter.image_angle		= lerp(obj_getter.image_angle, 0, self.obj_rotation);
+						self.obj_getter.image_angle	= lerp(self.obj_getter.image_angle, 0, self.obj_rotation);
 					}					
-					self.is_animatig			= true;
+					self.is_animatig				= true;
 					
 					if (self.panel_w >= 1)
 					{
-						self.panel_w			= lerp(self.panel_w, 1, self.acceleration);
-						global.x_size			= self.panel_w;
+						self.panel_w				= lerp(self.panel_w, 1, self.acceleration);
+						global.x_size				= self.panel_w;
 					}
 					
 					if(self.panel_h >= 1)
 					{
-						self.panel_h			= lerp(self.panel_w, 1, self.acceleration);
-						global.y_size			= self.panel_h;
+						self.panel_h				= lerp(self.panel_w, 1, self.acceleration);
+						global.y_size				= self.panel_h;
 					}
 				}
 				
 				if (global.current_action != action && self.x_pos <= 3)
 				{
-					obj_getter.image_alpha		= 1;
+					self.obj_getter.image_alpha		= 1;
 				}
 			}
 			
@@ -136,13 +136,13 @@ function ui_expansor_animate(obj, panel_name, animating, flipping){
 			{
 				if (self.x_pos >= self.max_pos -1 && global.clicked)
 				{
-					self.is_animating			= false;
+					self.is_animating				= false;
 				}
 				else
 				{
 					if (self.x_pos <= 2 && !global.clicked)
 					{
-						self.is_animating		= false;
+						self.is_animating			= false;
 					}
 				}
 			}
