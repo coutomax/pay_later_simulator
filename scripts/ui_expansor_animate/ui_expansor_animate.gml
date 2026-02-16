@@ -70,9 +70,9 @@ function ui_expansor_animate(obj, panel_name, animating, flipping){
 				
 				if (self.x_pos <= self.max_pos)
 				{
-					layer_set_visible(panel, true);									
+					layer_set_visible(self.panel, true);									
 					self.x_pos						= lerp(self.x_pos, self.max_pos, self.acceleration);
-					if (flip)
+					if (self.flip)
 					{
 						self.obj_getter.image_angle	= lerp(self.obj_getter.image_angle, self.max_angle, self.obj_rotation);
 					}					
@@ -96,7 +96,7 @@ function ui_expansor_animate(obj, panel_name, animating, flipping){
 				if (self.x_pos >= 0)
 				{
 					self.x_pos						= lerp(self.x_pos, self.min_pos, self.acceleration);
-					if (flip)
+					if (self.flip)
 					{
 						self.obj_getter.image_angle	= lerp(self.obj_getter.image_angle, 0, self.obj_rotation);
 					}					
@@ -130,8 +130,16 @@ function ui_expansor_animate(obj, panel_name, animating, flipping){
 			{
 				flexpanel_node_style_set_width(self.panel_content_child, self.panel_w, flexpanel_unit.point);
 				flexpanel_node_style_set_height(self.panel_content_child, self.panel_h, flexpanel_unit.point);
+				
+				var min_panel_w						= flexpanel_node_style_get_width(self.panel_content_child);
+				var min_panel_h						= flexpanel_node_style_get_height(self.panel_content_child);
+				
+				if (min_panel_w.value <= 5 && min_panel_h.value <= 5)
+				{
+					layer_set_visible(self.panel, false);
+				}
 			}
-						
+				
 			if (self.is_animating)
 			{
 				if (self.x_pos >= self.max_pos -1 && global.clicked)
