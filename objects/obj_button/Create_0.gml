@@ -36,6 +36,9 @@ function button_actions()
 				layer_set_visible("ui_clock", true);
 				layer_set_visible("ui_right_expansor", true);
 				layer_set_visible("ui_start_menu", false);
+				
+				instance_activate_object(obj_check_box);
+				
 			break;
 		
 			case "continue":

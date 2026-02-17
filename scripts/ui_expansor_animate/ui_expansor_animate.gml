@@ -95,7 +95,7 @@ function ui_expansor_animate(obj, panel_name, flipping){
 					
 					if (global.is_animating && self.panel_w >= self.max_pos - 5)
 					{
-						global.is_animating				= !global.is_animating;
+						global.is_animating = !global.is_animating;
 					}
 				}
 			}
@@ -125,12 +125,12 @@ function ui_expansor_animate(obj, panel_name, flipping){
 				
 				if (!global.is_animating)
 				{
-						self.is_visible				= true;
+						self.is_visible					= true;
 				}	
 				
 				if (global.current_action == action && global.is_animating && self.panel_w <= 15)
 				{
-					global.is_animating				= !global.is_animating;
+					global.is_animating = !global.is_animating;
 				}
 			}
 			

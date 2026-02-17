@@ -28,6 +28,9 @@ function reset(){
 	global.x_size					= 0;
 	global.y_size					= 0;
 	global.opened					= false;
+	global.is_animating				= false;
+	
+	global.current_action			= noone;
 
 	//object reset
 	obj_right_expansor.ex.x_pos		= 0;
@@ -38,5 +41,10 @@ function reset(){
 	if (instance_exists(obj_check_box))
 	{
 		obj_check_box.image_index	= 1;
+		obj_check_box.image_alpha	= 0;
+		obj_check_box.alpha			= 0;
+		obj_check_box.alphaText		= 0;
+		
+		instance_deactivate_object(obj_check_box);
 	}
 }
