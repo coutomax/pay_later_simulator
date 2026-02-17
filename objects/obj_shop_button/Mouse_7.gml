@@ -1,7 +1,8 @@
 event_inherited();
 
-if (!animating && visible)
+if (visible)
 {
-	global.clicked			= !global.clicked;
+	global.opened			= !global.opened;
+	global.is_animating		= !global.is_animating;
 	global.current_action	= actions;
 }

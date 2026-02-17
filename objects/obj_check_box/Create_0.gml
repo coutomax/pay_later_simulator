@@ -37,7 +37,7 @@ max_y					= _flex_panel_layout.height;
 
 button_desapear = function()
 {	
-	if (global.clicked)
+	if (global.opened)
 	{
 		if (global.y_size >= max_y/2 && image_alpha <= 1)
 		{

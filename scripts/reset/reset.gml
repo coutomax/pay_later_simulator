@@ -27,12 +27,13 @@ function reset(){
 
 	global.x_size					= 0;
 	global.y_size					= 0;
-	global.clicked					= false;
+	global.opened					= false;
 
 	//object reset
 	obj_right_expansor.ex.x_pos		= 0;
 	obj_right_expansor.image_angle	= 0;
-
+	
+	obj_shop_button.ex.x_pos		= 0;
 
 	if (instance_exists(obj_check_box))
 	{

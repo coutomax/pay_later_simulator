@@ -13,7 +13,8 @@ global.hadBreakfast			= false;
 global.hadSleep				= false;
 
 //controllers - booleanos
-global.clicked				= false;
+global.opened				= false;
+global.is_animating			= false;
 
 //numericos
 global.max_energy			= 100;

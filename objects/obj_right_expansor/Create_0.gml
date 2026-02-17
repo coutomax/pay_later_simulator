@@ -5,6 +5,6 @@ animating		= false;
 flipping		= true;
 visible			= true;
 
-ex				= ui_expansor_animate(self, self_panel, animating,	flipping);
+ex				= ui_expansor_animate(self, self_panel,	flipping);
 
 ex.init();

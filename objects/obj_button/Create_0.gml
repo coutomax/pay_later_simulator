@@ -72,6 +72,7 @@ function button_actions()
 				layer_set_visible("ui_clock", false);
 				layer_set_visible("ui_right_expansor", false);
 				layer_set_visible("ui_expansor_panel", false);
+				layer_set_visible("ui_shop_panel", false);
 				layer_set_visible("ui_pause_menu", false);
 				
 				layer_set_visible("ui_start_menu", true);

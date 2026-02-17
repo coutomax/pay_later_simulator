@@ -1,4 +1,4 @@
-function ui_expansor_animate(obj, panel_name, animating, flipping){
+function ui_expansor_animate(obj, panel_name, flipping){
 
 	var ex = 
 	{
@@ -23,11 +23,10 @@ function ui_expansor_animate(obj, panel_name, animating, flipping){
 		obj_rotation		:		0.07,
 		panel_w				:		50,
 		panel_h				:		50,
-		is_visible			:		false,
+		is_visible			:		true,
 		
 		obj_getter			:		obj,
 		panel				:		panel_name,
-		is_animating		:		animating,
 		flip				:		flipping,
 	
 		init	:			function ()
@@ -53,7 +52,7 @@ function ui_expansor_animate(obj, panel_name, animating, flipping){
 			self.max_x					= _panel_layout.width;
 			self.max_y					= _panel_layout.height;
 		
-			layer_set_visible(panel, false);
+			//layer_set_visible(panel, false);
 			
 			flexpanel_node_style_set_width(self.panel_content_child, 50, flexpanel_unit.point);
 			flexpanel_node_style_set_height(self.panel_content_child, 50, flexpanel_unit.point);
@@ -61,8 +60,8 @@ function ui_expansor_animate(obj, panel_name, animating, flipping){
 		},
 		
 		update	:			function (action)
-		{		
-			if (global.clicked)
+		{
+			if (global.opened)
 			{	
 				if (global.current_action != action)
 				{
@@ -80,8 +79,6 @@ function ui_expansor_animate(obj, panel_name, animating, flipping){
 						{
 							self.obj_getter.image_angle	= lerp(self.obj_getter.image_angle, self.max_angle, self.obj_rotation);
 						}					
-						
-						self.is_animating				= true;
 										
 						if (self.panel_w <= self.max_x)
 						{
@@ -95,6 +92,11 @@ function ui_expansor_animate(obj, panel_name, animating, flipping){
 							global.y_size				= self.panel_h;
 						}
 					}
+					
+					if (global.is_animating && self.panel_w >= self.max_pos - 5)
+					{
+						global.is_animating = !global.is_animating;
+					}
 				}
 			}
 			else
@@ -107,9 +109,7 @@ function ui_expansor_animate(obj, panel_name, animating, flipping){
 					{
 						self.obj_getter.image_angle	= lerp(self.obj_getter.image_angle, 0, self.obj_rotation);
 					}					
-					
-					self.is_animatig				= true;
-					
+										
 					if (self.panel_w >= 1)
 					{
 						self.panel_w				= lerp(self.panel_w, 1, self.acceleration);
@@ -123,9 +123,14 @@ function ui_expansor_animate(obj, panel_name, animating, flipping){
 					}
 				}
 				
-				if (global.current_action != action && self.x_pos <= 3)
+				if (!global.is_animating)
 				{
-					self.is_visible					= true;
+						self.is_visible					= true;
+				}	
+				
+				if (global.current_action == action && global.is_animating && self.panel_w <= 15)
+				{
+					global.is_animating = !global.is_animating;
 				}
 			}
 			
@@ -147,27 +152,12 @@ function ui_expansor_animate(obj, panel_name, animating, flipping){
 					layer_set_visible(self.panel, false);
 				}
 			}
-				
-			if (self.is_animating)
-			{
-				if (self.x_pos >= self.max_pos -1 && global.clicked)
-				{
-					self.is_animating				= false;
-				}
-				else
-				{
-					if (self.x_pos <= 2 && !global.clicked)
-					{
-						self.is_animating			= false;
-					}
-				}
-			}
-					
+			
 			return {
                 x_pos		:	self.x_pos,
                 w			:	self.panel_w,
                 h			:	self.panel_h,
-                anim		:	self.is_animating,
+                anim		:	global.is_animating,
 				is_visible	:	self.is_visible
             };
 		}
