@@ -14,7 +14,7 @@ hasntSave		= actions == "continue_save" && !global.hasSave
 
 	getLayerName	= layer_get_name(self.layer);	
 	selfLayer		= layer_get_flexpanel_node(getLayerName);	
-	selfText		= flexpanel_text_finder(selfLayer, $"fp_{actions}");
+	selfText		= scr_flexpanel_text_finder(selfLayer, $"fp_{actions}");
 
 #endregion
 
@@ -68,7 +68,7 @@ function button_actions()
 			break;
 		
 			case "back_menu_yes_option":	
-				reset();
+				scr_reset();
 				
 				layer_set_visible(self.layer, false);
 				layer_set_visible("ui_bars", false);

@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"reset",
+  "%Name":"scr_ui_expansor_animate",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"reset",
+  "name":"scr_ui_expansor_animate",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

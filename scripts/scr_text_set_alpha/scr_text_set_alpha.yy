@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"initializer",
+  "%Name":"scr_text_set_alpha",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"initializer",
+  "name":"scr_text_set_alpha",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

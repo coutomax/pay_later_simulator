@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"text_set_alpha",
+  "%Name":"scr_expansor_behaviors",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"text_set_alpha",
+  "name":"scr_expansor_behaviors",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

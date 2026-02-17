@@ -4,7 +4,6 @@ self_panel		= "ui_shop_panel";
 flipping		= false;
 visible			= true;
 
-//ui_shop_panel
-ex				= ui_expansor_animate(self, self_panel, flipping);
+behavior = scr_expansor_behaviors(self, self_panel, false, false, actions);
 
-ex.init();
+behavior.on_create();

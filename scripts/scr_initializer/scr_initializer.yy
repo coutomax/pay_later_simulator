@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"ui_expansor_animate",
+  "%Name":"scr_initializer",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"ui_expansor_animate",
+  "name":"scr_initializer",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

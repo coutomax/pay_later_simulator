@@ -6,9 +6,9 @@ game_days					= 1;
 game_months					= 1;
 game_years					= 1;
 
-clock_text_element_id		= flexpanel_get_element_id("ui_clock", "fp_clock");
-money_text_element_id		= flexpanel_get_element_id("ui_clock","fp_money");
-calendar_text_element_id	= flexpanel_get_element_id("ui_clock","fp_calendar");
+clock_text_element_id		= scr_flexpanel_get_element_id("ui_clock", "fp_clock");
+money_text_element_id		= scr_flexpanel_get_element_id("ui_clock","fp_money");
+calendar_text_element_id	= scr_flexpanel_get_element_id("ui_clock","fp_calendar");
 
 function clock_formatter() // formata a data e o horário
 {

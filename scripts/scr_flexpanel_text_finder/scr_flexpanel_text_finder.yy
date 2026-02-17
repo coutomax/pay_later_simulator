@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"flexpanel_get_element_id",
+  "%Name":"scr_flexpanel_text_finder",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"flexpanel_get_element_id",
+  "name":"scr_flexpanel_text_finder",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

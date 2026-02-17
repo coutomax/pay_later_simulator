@@ -1,4 +1,4 @@
-function flexpanel_text_finder(layerName, node)
+function scr_flexpanel_text_finder(layerName, node)
 {
 	var _flexpanel = flexpanel_node_get_child(layerName, node);
 	
@@ -12,7 +12,7 @@ function flexpanel_text_finder(layerName, node)
 		}
 		else
 		{
-			flexpanel_text_finder(_flexpanel, node);
+			scr_flexpanel_text_finder(_flexpanel, node);
 		}
 	}
 	else

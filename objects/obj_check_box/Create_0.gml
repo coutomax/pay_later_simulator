@@ -12,11 +12,11 @@ flex_panel_node			= layer_get_flexpanel_node(panel_layer);
 flex_panel_text			= flexpanel_node_get_child(flex_panel_node, "fp_text");
 flex_panel_panel		= flexpanel_node_get_child(flex_panel_node, "fp_content");
 
-text_set_alpha(panel_layer, $"txt_bills", alphaText);
-text_set_alpha(panel_layer, $"txt_{actions}", alphaText);
-text_set_alpha(panel_layer, $"txt_{actions}_value", alphaText);
-text_set_alpha(panel_layer, "txt_total", alphaText);
-text_set_alpha(panel_layer, "txt_value", alphaText);
+scr_text_set_alpha(panel_layer, $"txt_bills", alphaText);
+scr_text_set_alpha(panel_layer, $"txt_{actions}", alphaText);
+scr_text_set_alpha(panel_layer, $"txt_{actions}_value", alphaText);
+scr_text_set_alpha(panel_layer, "txt_total", alphaText);
+scr_text_set_alpha(panel_layer, "txt_value", alphaText);
 		
 var _flex_panel_layout	= flexpanel_node_layout_get_position(flex_panel_panel);
 
@@ -61,10 +61,10 @@ button_desapear = function()
 	alphaText				= clamp(alphaText, 0, 1);
 	
 	//Ajusta o alpha dos textos
-	text_set_alpha(panel_layer, "txt_bills", alphaText);
-	text_set_alpha(panel_layer, $"txt_{actions}", alphaText);
-	text_set_alpha(panel_layer, $"txt_{actions}_value", alphaText);
-	text_set_alpha(panel_layer, $"txt_total", alphaText);
-	text_set_alpha(panel_layer, "txt_value", alphaText);
+	scr_text_set_alpha(panel_layer, "txt_bills", alphaText);
+	scr_text_set_alpha(panel_layer, $"txt_{actions}", alphaText);
+	scr_text_set_alpha(panel_layer, $"txt_{actions}_value", alphaText);
+	scr_text_set_alpha(panel_layer, $"txt_total", alphaText);
+	scr_text_set_alpha(panel_layer, "txt_value", alphaText);
 	
 }

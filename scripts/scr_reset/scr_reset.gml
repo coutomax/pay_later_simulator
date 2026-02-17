@@ -1,4 +1,4 @@
-function reset(){
+function scr_reset(){
 	
 	//boolean reset
 	global.paused					= false;

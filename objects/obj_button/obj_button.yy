@@ -13,8 +13,8 @@
   "name":"obj_button",
   "overriddenProperties":[],
   "parent":{
-    "name":"UI",
-    "path":"folders/Objects/UI.yy",
+    "name":"UI Controllers",
+    "path":"folders/Objects/UI/UI Controllers.yy",
   },
   "parentObjectId":null,
   "persistent":false,

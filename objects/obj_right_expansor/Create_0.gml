@@ -1,10 +1,6 @@
 event_inherited();
 
 self_panel		= "ui_expansor_panel";
-animating		= false;
-flipping		= true;
-visible			= true;
+behavior = scr_expansor_behaviors(self, self_panel, false, true, actions)
 
-ex				= ui_expansor_animate(self, self_panel,	flipping);
-
-ex.init();
+behavior.on_create();

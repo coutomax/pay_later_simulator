@@ -1,4 +1,4 @@
-function ui_expansor_animate(obj, panel_name, flipping){
+function scr_ui_expansor_animate(obj, panel_name, flipping){
 
 	var ex = 
 	{
@@ -31,32 +31,33 @@ function ui_expansor_animate(obj, panel_name, flipping){
 	
 		init	:			function ()
 		{
-		
-			//dados do objeto
-			self.obj_layer				= layer_get_name(self.obj_getter.layer);
-			self.obj_flex_node			= layer_get_flexpanel_node(self.obj_layer);
-			self.obj_flex_button		= flexpanel_node_get_child(self.obj_flex_node, $"fp_{self.obj_getter.actions}");
-			self.obj_button_panel		= flexpanel_node_get_child(self.obj_flex_node, "fp_panel");
+			if (panel != noone)
+			{
+				//dados do objeto
+				self.obj_layer				= layer_get_name(self.obj_getter.layer);
+				self.obj_flex_node			= layer_get_flexpanel_node(self.obj_layer);
+				self.obj_flex_button		= flexpanel_node_get_child(self.obj_flex_node, $"fp_{self.obj_getter.actions}");
+				self.obj_button_panel		= flexpanel_node_get_child(self.obj_flex_node, "fp_panel");
 						
-			var _flex_layout			= flexpanel_node_layout_get_position(self.obj_flex_button);
-			var _flex_button_layout		= flexpanel_node_layout_get_position(self.obj_button_panel);
+				var _flex_layout			= flexpanel_node_layout_get_position(self.obj_flex_button);
+				var _flex_button_layout		= flexpanel_node_layout_get_position(self.obj_button_panel);
 			
-			self.max_pos				= _flex_button_layout.width - _flex_layout.width;
+				self.max_pos				= _flex_button_layout.width - _flex_layout.width;
 			
-			//dados do painel
-			self.panel_flex_node		= layer_get_flexpanel_node(panel);
-			self.panel_content_child	= flexpanel_node_get_child(self.panel_flex_node, "fp_content");
+				//dados do painel
+				self.panel_flex_node		= layer_get_flexpanel_node(panel);
+				self.panel_content_child	= flexpanel_node_get_child(self.panel_flex_node, "fp_content");
 			
-			var _panel_layout			= flexpanel_node_layout_get_position(self.panel_content_child);
+				var _panel_layout			= flexpanel_node_layout_get_position(self.panel_content_child);
 			
-			self.max_x					= _panel_layout.width;
-			self.max_y					= _panel_layout.height;
+				self.max_x					= _panel_layout.width;
+				self.max_y					= _panel_layout.height;
 		
-			//layer_set_visible(panel, false);
+				//layer_set_visible(panel, false);
 			
-			flexpanel_node_style_set_width(self.panel_content_child, 50, flexpanel_unit.point);
-			flexpanel_node_style_set_height(self.panel_content_child, 50, flexpanel_unit.point);
-		
+				flexpanel_node_style_set_width(self.panel_content_child, 50, flexpanel_unit.point);
+				flexpanel_node_style_set_height(self.panel_content_child, 50, flexpanel_unit.point);
+			}
 		},
 		
 		update	:			function (action)
