@@ -21,11 +21,13 @@ function clock_formatter() // formata a data e o horário
 	{
 		game_minutes++;
 		game_seconds		= 0;
+		global.minutes		= game_minutes;
 	}
 	
 	if (game_minutes >= 60)
 	{
 		game_hours++;
+		global.hours		= game_hours;
 		game_minutes		= 0;
 	}
 	

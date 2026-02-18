@@ -1,6 +1,10 @@
 Validar pra quando um dialog estiver aberto, impedir o click em outros botões, 
 assim como acontece na pausa. - OK
 
+pela regra de 3, com 27 horas o ângulo do ponteiro fica em 270, ou seja, 10:1 angulo:hora
+Fecha o horário às 3 da manhã.
+
+
 Colocar as horas da variavel time no texto da layer - OK
 
 Criar um sistema de save.

@@ -35,7 +35,6 @@ function scr_expansor_behaviors(obj, panel_name, animating, flipping, actions){
 				global.current_action	= self.action;
 			}
 		}
-		
 	}
 	
 	return s;

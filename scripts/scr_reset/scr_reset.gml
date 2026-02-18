@@ -18,7 +18,7 @@ function scr_reset(){
 	global.life						= 100;
 
 	global.minutes					= 1;
-	global.hours					= 1;
+	global.hours					= 8;
 
 	global.day						= 1;
 	global.week						= 1;
@@ -33,10 +33,11 @@ function scr_reset(){
 	global.current_action			= noone;
 
 	//object reset
-	obj_right_expansor.ex.x_pos		= 0;
-	obj_right_expansor.image_angle	= 0;
+	obj_right_expansor.behavior.ex.x_pos		= 0;
+	obj_right_expansor.image_angle				= 0;
 	
-	obj_shop_button.ex.x_pos		= 0;
+	obj_shop_button.behavior.ex.x_pos			= 0;	
+	obj_house_button.behavior.ex.x_pos			= 0;
 
 	if (instance_exists(obj_check_box))
 	{
