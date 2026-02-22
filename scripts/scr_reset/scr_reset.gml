@@ -14,6 +14,7 @@ function scr_reset(){
 	global.max_energy				= 100;
 	global.max_stress				= 100;
 	global.max_life					= 100;
+	global.velocity					= 4;
 
 	global.energy					= 100;
 	global.stress					= 0;
