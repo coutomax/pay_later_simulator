@@ -11,6 +11,8 @@ global.hadLunch				= false;
 global.hadDinner			= false;
 global.hadBreakfast			= false;
 global.hadSleep				= false;
+global.worked				= false;
+global.on_the_table			= false;
 
 //controllers - booleanos
 global.opened				= false;
@@ -22,6 +24,7 @@ global.max_stress			= 100;
 global.max_life				= 100;
 global.money				= 2000;
 global.energy				= 100;
+global.velocity				= 4;
 global.stress				= 0;
 global.life					= 100;
 global.worked_hours			= 0;

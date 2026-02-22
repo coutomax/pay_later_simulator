@@ -7,6 +7,8 @@ function scr_reset(){
 	global.hadDinner				= false;
 	global.hadBreakfast				= false;
 	global.hadSleep					= false;
+	global.worked					= false;
+	global.on_the_table				= false;
 
 	//numeric reset
 	global.max_energy				= 100;
@@ -33,11 +35,26 @@ function scr_reset(){
 	global.current_action			= noone;
 
 	//object reset
-	obj_right_expansor.behavior.ex.x_pos		= 0;
-	obj_right_expansor.image_angle				= 0;
+	if (instance_exists(obj_green_button))
+	{
+		obj_green_button.this_worked				= false;
+	}
 	
-	obj_shop_button.behavior.ex.x_pos			= 0;	
-	obj_house_button.behavior.ex.x_pos			= 0;
+	if	(instance_exists(obj_right_expansor))
+	{
+		obj_right_expansor.behavior.ex.x_pos		= 0;
+		obj_right_expansor.image_angle				= 0;
+	}
+		
+	if	(instance_exists(obj_shop_button))
+	{
+		obj_shop_button.behavior.ex.x_pos			= 0;	
+	}
+	
+	if	(instance_exists(obj_house_button))
+	{
+		obj_house_button.behavior.ex.x_pos			= 0;
+	}
 
 	if (instance_exists(obj_check_box))
 	{
@@ -47,5 +64,10 @@ function scr_reset(){
 		obj_check_box.alphaText		= 0;
 		
 		instance_deactivate_object(obj_check_box);
+	}
+	
+	if (instance_exists(obj_table))
+	{
+		instance_destroy(obj_table);
 	}
 }

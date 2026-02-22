@@ -8,3 +8,8 @@ else
 {
 	image_speed		= 1;
 }
+
+if (global.worked)
+{
+	scr_walking_animation(self);
+}
