@@ -34,6 +34,7 @@ global.week_day				= 1;
 global.month_day			= 1;
 global.month				= 1;
 global.year					= 1;
+global.total_bills			= 0.0;
 
 //controllers - numéricos
 global.x_size				= 0;

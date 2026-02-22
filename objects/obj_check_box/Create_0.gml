@@ -20,6 +20,10 @@ scr_text_set_alpha(panel_layer, "txt_value", alphaText);
 		
 var _flex_panel_layout	= flexpanel_node_layout_get_position(flex_panel_panel);
 
+value_adjust = scr_set_flexpanel_text(self, $"txt_{actions}_value");
+
+value_adjust.on_create();
+
 max_x					= _flex_panel_layout.width;
 max_y					= _flex_panel_layout.height;
 
@@ -32,10 +36,14 @@ max_y					= _flex_panel_layout.height;
 			object		= global.bills[i];
 		}
 	}
-
 #endregion
 
-button_desapear = function()
+var money_format		= string_format(object.value, 0, 2)
+value_adjust.on_edit($"c$: {money_format}");
+
+
+
+button_desapear			= function()
 {	
 	if (global.opened)
 	{

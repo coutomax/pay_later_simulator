@@ -6,4 +6,3 @@ if (image_index == 4)
 }
 
 button_status		= object.status[image_index - 1];
-
