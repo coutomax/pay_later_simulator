@@ -6,11 +6,13 @@ function scr_walking_animation(obj){
 	{
 		if (obj.y <= 455)
 		{
-			obj.y += global.velocity;
+			obj.sprite_index		= spr_walking_character;
+			obj.y					+= global.velocity;
 		}
 		else
 		{
-			global.on_the_table = true;
+			obj.sprite_index		= spr_character;
+			global.on_the_table		= true;
 		}
 	}
 }

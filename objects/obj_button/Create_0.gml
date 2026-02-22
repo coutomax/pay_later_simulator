@@ -95,8 +95,8 @@ function button_actions()
 			break;
 			
 			case "work":
-				global.energy -= 5;
-				global.stress += 1;
+				//global.energy -= 5;
+				//global.stress += 1;
 			break;
 			
 			case "right_expand":
