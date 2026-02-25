@@ -6,6 +6,9 @@ game_days					= 1;
 game_months					= 1;
 game_years					= 1;
 
+fade_alpha					= 0;
+fade_speed					= 0.03;
+
 clock_text_element_id		= scr_flexpanel_get_element_id("ui_clock", "fp_clock");
 money_text_element_id		= scr_flexpanel_get_element_id("ui_clock","fp_money");
 calendar_text_element_id	= scr_flexpanel_get_element_id("ui_clock","fp_calendar");
@@ -17,7 +20,7 @@ function clock_formatter() // formata a data e o horário
 	
 	game_seconds++;
 	
-	if (game_seconds >= room_speed * 0.015) // game_get_speed(gamespeed_fps)
+	if (game_seconds >= room_speed * 0.15) // game_get_speed(gamespeed_fps)
 	{
 		game_minutes++;
 		game_seconds		= 0;

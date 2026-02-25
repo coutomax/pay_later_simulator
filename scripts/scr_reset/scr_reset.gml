@@ -9,12 +9,15 @@ function scr_reset(){
 	global.hadSleep					= false;
 	global.worked					= false;
 	global.on_the_table				= false;
+	global.puzzle					= false;
+	global.fading					= false;
 
 	//numeric reset
 	global.max_energy				= 100;
 	global.max_stress				= 100;
 	global.max_life					= 100;
 	global.velocity					= 4;
+	global.fade						= 0;
 
 	global.energy					= 100;
 	global.stress					= 0;

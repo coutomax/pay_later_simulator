@@ -7,6 +7,7 @@ yscale			= escalaY;
 selfLayer		= noone;
 selfText		= noone;
 back_to_menu	= false;
+new_game		= false;
 
 hasntSave		= actions == "continue_save" && !global.hasSave
 
@@ -31,19 +32,13 @@ function button_actions()
 		switch(actions)
 		{
 			case "new_game":
-				room_goto(0);
-				layer_set_visible("ui_bars", true);
-				layer_set_visible("ui_clock", true);
-				layer_set_visible("ui_right_expansor", true);
-				layer_set_visible("ui_start_menu", false);
-				
-				instance_activate_object(obj_check_box);
-				
+				global.fading		= true;
+				new_game			= true;				
 			break;
 		
 			case "continue":
 				layer_set_visible("ui_pause_menu", false);
-				global.paused = false;
+				global.paused		= false;
 			break;
 		
 			case "continue_save":
