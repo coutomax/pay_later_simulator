@@ -11,6 +11,7 @@ function scr_reset(){
 	global.on_the_table				= false;
 	global.puzzle					= false;
 	global.fading					= false;
+	global.puzzle_paused			= false;
 	global.new_game					= true;
 
 	//numeric reset

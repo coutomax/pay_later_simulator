@@ -1,6 +1,5 @@
-if (pressed && (position_meeting(mouse_x, mouse_y, id)))
+if (dragging)
 {
-	// alterar para o x e y correspondente dentro do flexpanel
-	x = mouse_x;
-	y = mouse_y;
+	x = mouse_x - x_grab;
+	y = mouse_y - y_grab;
 }

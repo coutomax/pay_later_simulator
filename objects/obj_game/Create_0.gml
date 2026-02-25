@@ -10,6 +10,8 @@ game_years					= 1;
 
 fade_speed					= 0.03;
 
+show_pause_dialog			= false;
+
 clock_text_element_id		= scr_flexpanel_get_element_id("ui_clock", "fp_clock");
 money_text_element_id		= scr_flexpanel_get_element_id("ui_clock","fp_money");
 calendar_text_element_id	= scr_flexpanel_get_element_id("ui_clock","fp_calendar");

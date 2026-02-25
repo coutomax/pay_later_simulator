@@ -17,9 +17,9 @@ if (!global.paused)
 
 	if (global.energy == 85)
 	{
-		global.puzzle = true;
-		global.fading = true;
-		global.paused = !global.paused;
+		global.puzzle		= true;
+		global.fading		= true;
+		global.paused		= !global.paused;
 		
 		scr_create_papers();
 	}

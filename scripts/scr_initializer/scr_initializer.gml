@@ -19,6 +19,7 @@ global.puzzle				= false;
 global.opened				= false;
 global.is_animating			= false;
 global.fading				= false;
+global.puzzle_paused		= false;
 global.new_game				= true;
 
 //numericos
@@ -42,6 +43,8 @@ global.month				= 1;
 global.year					= 1;
 global.total_bills			= 0.0;
 global.fade					= 0;
+global.paper_front_depth	= 999
+global.drag_id				= noone;
 
 //controllers - numéricos
 global.x_size				= 0;

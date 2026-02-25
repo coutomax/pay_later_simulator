@@ -6,5 +6,9 @@ escalaY			= image_yscale;
 xscale			= escalaX;
 yscale			= escalaY;
 
-pressed			= false;
+x_grab			= 0;
+y_grab			= 0;
+
+dragging		= false;
+
 

@@ -1,1 +1,1 @@
-pressed			= false;
+dragging			= false;

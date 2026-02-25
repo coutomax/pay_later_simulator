@@ -11,6 +11,8 @@ Colocar as horas da variavel time no texto da layer - OK
 Arrumar bug ao abrir o painel de contas, aonde o título fica bugado visualmente. 
 - testar com struct - OK
 
+Criar variável global.paused_on_puzzle
+
 Corrigir problema no script flexpanel_text_finder, onde se não existir o fp_text acaba 
 gerando loop infinito.
 
