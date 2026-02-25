@@ -29,7 +29,7 @@ max_y					= _flex_panel_layout.height;
 
 #region busca o objeto referente ao botão correto
 
-	for (i = 0; i < array_length(global.bills); i++)
+	for (var i = 0; i < array_length(global.bills); i++)
 	{
 		if (global.bills[i].tag == actions)
 		{

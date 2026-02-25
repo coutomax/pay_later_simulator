@@ -1,6 +1,6 @@
 {
   "$GMObject":"",
-  "%Name":"obj_papers",
+  "%Name":"obj_paper",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
@@ -10,7 +10,7 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_papers",
+  "name":"obj_paper",
   "overriddenProperties":[],
   "parent":{
     "name":"Papers",
@@ -30,16 +30,7 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-    {"$GMObjectProperty":"v2","%Name":"paper_type","filters":[],"listItems":[
-        "\"paper_1\"",
-        "\"paper_2\"",
-        "\"paper_3\"",
-        "\"paper_4\"",
-        "\"paper_5\"",
-        "\"paper_6\"",
-      ],"multiselect":false,"name":"paper_type","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"paper_1\"","varType":6,},
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,

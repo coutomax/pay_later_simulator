@@ -28,7 +28,7 @@ function scr_expansor_behaviors(obj, panel_name, animating, flipping, actions){
 		
 		on_left_released:	function()
 		{
-			if (self.object.visible)
+			if (self.object.visible && !global.paused)
 			{
 				global.opened			= !global.opened;
 				global.is_animating		= !global.is_animating;

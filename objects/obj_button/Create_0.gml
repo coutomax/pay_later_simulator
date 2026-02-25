@@ -11,6 +11,19 @@ new_game		= false;
 
 hasntSave		= actions == "continue_save" && !global.hasSave
 
+paused_imune	= [
+	"yes_option", 
+	"no_option",
+	"continue",
+	"settings",
+	"main_menu",
+	"save",
+	"exit",
+	"back_menu_yes_option",
+	"back_menu_no_option"
+	
+];
+
 #region recebe os dados corretos de cada botão
 
 	getLayerName	= layer_get_name(self.layer);	
