@@ -1,4 +1,4 @@
-if (global.paused)
+if (global.paused || global.puzzle_paused)
 {
 	if (array_contains(paused_imune, actions))
 	{

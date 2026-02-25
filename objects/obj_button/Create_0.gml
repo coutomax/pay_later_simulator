@@ -51,7 +51,13 @@ function button_actions()
 		
 			case "continue":
 				layer_set_visible("ui_pause_menu", false);
-				global.paused		= false;
+				
+				global.paused				= !global.paused;
+
+				if (global.puzzle)
+				{
+					global.puzzle_paused	= !global.puzzle_paused;
+				}
 			break;
 		
 			case "continue_save":

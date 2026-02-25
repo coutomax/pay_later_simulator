@@ -73,6 +73,7 @@
     {"id":{"name":"scr_flexpanel_get_element_id","path":"scripts/scr_flexpanel_get_element_id/scr_flexpanel_get_element_id.yy",},},
     {"id":{"name":"scr_flexpanel_text_finder","path":"scripts/scr_flexpanel_text_finder/scr_flexpanel_text_finder.yy",},},
     {"id":{"name":"scr_initializer","path":"scripts/scr_initializer/scr_initializer.yy",},},
+    {"id":{"name":"scr_puzzle_paused_behavior","path":"scripts/scr_puzzle_paused_behavior/scr_puzzle_paused_behavior.yy",},},
     {"id":{"name":"scr_reset","path":"scripts/scr_reset/scr_reset.yy",},},
     {"id":{"name":"scr_set_flexpanel_text","path":"scripts/scr_set_flexpanel_text/scr_set_flexpanel_text.yy",},},
     {"id":{"name":"scr_text_set_alpha","path":"scripts/scr_text_set_alpha/scr_text_set_alpha.yy",},},

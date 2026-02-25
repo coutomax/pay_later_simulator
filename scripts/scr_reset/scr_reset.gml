@@ -76,4 +76,12 @@ function scr_reset(){
 	{
 		instance_destroy(obj_table);
 	}
+	
+	if (instance_exists(obj_paper))
+	{
+		with(obj_paper)
+		{
+			instance_destroy(obj_paper);
+		}
+	}
 }

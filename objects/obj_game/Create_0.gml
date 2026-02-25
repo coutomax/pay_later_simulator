@@ -9,6 +9,7 @@ game_months					= 1;
 game_years					= 1;
 
 fade_speed					= 0.03;
+actual_fade					= 0;
 
 show_pause_dialog			= false;
 

@@ -1,4 +1,11 @@
-if global.puzzle_paused exit;
+scr_puzzle_paused_behavior();
+
+if (global.puzzle_paused)
+{
+	global.fade		= 0;
+	exit;
+}
+
 
 if (global.puzzle)
 {

@@ -1,6 +1,6 @@
 event_inherited();
 
-if (!global.paused)
+if (!global.paused && !global.puzzle_paused)
 {
 	if (actions == "work" && !this_worked)
 	{	
