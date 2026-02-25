@@ -14,11 +14,12 @@ global.hadSleep				= false;
 global.worked				= false;
 global.on_the_table			= false;
 global.puzzle				= false;
-global.fading				= false;
 
 //controllers - booleanos
 global.opened				= false;
 global.is_animating			= false;
+global.fading				= false;
+global.new_game				= true;
 
 //numericos
 global.max_energy			= 100;

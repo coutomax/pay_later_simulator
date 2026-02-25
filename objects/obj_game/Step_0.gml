@@ -9,30 +9,14 @@ else
 	layer_set_visible("ui_bottom_buttons", false);
 }
 
-if (global.fading)
+if (global.new_game)
 {
-	if (global.fade < 1)
-	{
-		global.fade			+= fade_speed;
-	}
-	
-	if (global.fade > 1)
-	{
-		global.fade			= 1;
-		global.fading		= false;
-	}
+	scr_fader(0.03, 0, 1);
 }
-else
+
+if (global.puzzle)
 {
-	if (global.fade > 0)
-	{
-		global.fade			-= fade_speed;
-	}
-	
-	if(global.fade < 0)
-	{
-		global.fade			= 0;
-	}
+	scr_fader(0.03, 0, 0.5);
 }
 
 day_editor();

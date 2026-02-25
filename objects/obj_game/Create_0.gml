@@ -1,3 +1,5 @@
+depth						= 47;
+
 game_seconds				= 0;
 game_minutes				= 0;
 game_hours					= 8;
@@ -6,7 +8,6 @@ game_days					= 1;
 game_months					= 1;
 game_years					= 1;
 
-fade_alpha					= 0;
 fade_speed					= 0.03;
 
 clock_text_element_id		= scr_flexpanel_get_element_id("ui_clock", "fp_clock");

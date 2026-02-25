@@ -12,3 +12,9 @@ if (global.worked && global.on_the_table)
 	global.energy		-= 5;
 	global.stress		+= 1;
 }
+
+if (global.energy == 85)
+{
+	global.puzzle = true;
+	global.fading = true;
+}
