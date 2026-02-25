@@ -67,6 +67,7 @@
     {"id":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
     {"id":{"name":"rm_start","path":"rooms/rm_start/rm_start.yy",},},
     {"id":{"name":"RoomUI","path":"roomui/RoomUI/RoomUI.yy",},},
+    {"id":{"name":"scr_create_papers","path":"scripts/scr_create_papers/scr_create_papers.yy",},},
     {"id":{"name":"scr_expansor_behaviors","path":"scripts/scr_expansor_behaviors/scr_expansor_behaviors.yy",},},
     {"id":{"name":"scr_fader","path":"scripts/scr_fader/scr_fader.yy",},},
     {"id":{"name":"scr_flexpanel_get_element_id","path":"scripts/scr_flexpanel_get_element_id/scr_flexpanel_get_element_id.yy",},},

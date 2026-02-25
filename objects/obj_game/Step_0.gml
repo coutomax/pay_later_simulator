@@ -1,3 +1,8 @@
+if (global.puzzle)
+{
+	scr_fader(0.03, 0, 0.5);
+}
+
 if global.paused exit;
 
 if (room == rm_game)
@@ -12,11 +17,6 @@ else
 if (global.new_game)
 {
 	scr_fader(0.03, 0, 1);
-}
-
-if (global.puzzle)
-{
-	scr_fader(0.03, 0, 0.5);
 }
 
 day_editor();
