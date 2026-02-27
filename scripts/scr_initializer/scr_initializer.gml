@@ -43,7 +43,7 @@ global.month				= 1;
 global.year					= 1;
 global.total_bills			= 0.0;
 global.fade					= 0;
-global.paper_front_depth	= 999
+
 global.drag_id				= noone;
 
 //controllers - numéricos
@@ -54,6 +54,8 @@ global.y_size				= 0;
 global.current_action		= noone;
 
 global.game_data			= {};
+
+global.papers_created		= [];
 
 #region Object puzzles
 	global.puzzles =

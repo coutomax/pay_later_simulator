@@ -38,7 +38,10 @@ function scr_reset(){
 	global.opened					= false;
 	global.is_animating				= false;
 	
+	global.drag_id					= noone;
 	global.current_action			= noone;
+	
+	global.papers_created			= [];
 
 	//object reset
 	if (instance_exists(obj_green_button))

@@ -1,4 +1,4 @@
-depth						= 47;
+depth						= 9999;
 
 game_seconds				= 0;
 game_minutes				= 0;

@@ -3,6 +3,7 @@ function scr_create_papers(){
 
 	var _xpos			= 0;
 	var _ypos			= 0;
+	var _depth			= -100;
 	
 	for (var i = 0; i < 6; i++)
 	{
@@ -20,11 +21,12 @@ function scr_create_papers(){
 			_object[i].status[2]._id				= 2;
 		}
 		
-		_xpos					= random_range(150, display_get_width() - 150);
-		_ypos					= random_range(240, display_get_height() - 240);
+		_xpos						= random_range(150, display_get_width() - 150);
+		_ypos						= random_range(240, display_get_height() - 240);
 		
-		var _inst				= instance_create_layer(_xpos, _ypos, "Instances", obj_paper);
-		_inst.sprite_index		= _object[i].sprite;
-	
+		var _inst					= instance_create_layer(_xpos, _ypos, "Puzzle_instance", obj_paper);
+		_inst.sprite_index			= _object[i].sprite;
+		_inst.depth					= _depth;
+		_depth--;
 	}
 }
