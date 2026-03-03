@@ -6,10 +6,13 @@ if (global.puzzle_paused)
 	exit;
 }
 
-
 if (global.puzzle)
 {
 	scr_fader(0.03, 0, 0.5);
+}
+else
+{
+	scr_fader(0.03, 0.5, 0);
 }
 
 if global.paused exit;

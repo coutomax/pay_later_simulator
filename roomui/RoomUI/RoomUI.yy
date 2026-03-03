@@ -3,7 +3,6 @@
   "%Name":"RoomUI",
   "children":[
     {"$GMRUILayer":"v1","%Name":"ui_right_expansor","alignItems":2,"children":[
-        {"$GMRFlexPanel":"","%Name":"fp_button_controller","alignItems":2,"children":[],"flexDirection":0,"height":{"unit":3,"value":16.0,},"justifyContent":1,"name":"fp_button_controller","nodeColour":4282970743,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":16.0,},},
         {"$GMRFlexPanel":"","%Name":"fp_screen","alignItems":3,"children":[
             {"$GMRFlexPanel":"","%Name":"fp_panel","alignItems":1,"children":[
                 {"$GMRFlexPanel":"","%Name":"fp_right_expand","alignItems":2,"children":[

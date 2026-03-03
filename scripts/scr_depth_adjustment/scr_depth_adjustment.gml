@@ -41,7 +41,7 @@ function scr_depth_adjustment(){
 					_top_inst.x_grab		= mouse_x - _top_inst.x;
 					_top_inst.y_grab		= mouse_y - _top_inst.y;
 					
-					obj_paper_controller.dragging	= true;
+					obj_puzzle_controller.dragging	= true;
 					
 			    }
 			}
@@ -54,7 +54,7 @@ function scr_depth_adjustment(){
 	
 		if (mouse_check_button_released(mb_left))
 		{
-			obj_paper_controller.dragging	= false;
+			obj_puzzle_controller.dragging	= false;
 			global.drag_id					= noone;
 		}
 	}

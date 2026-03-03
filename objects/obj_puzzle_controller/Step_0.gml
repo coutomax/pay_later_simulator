@@ -1,5 +1,7 @@
 scr_depth_adjustment();
 
+layer_set_visible("ui_bottom_buttons", !global.puzzle);
+
 if (dragging && global.drag_id != noone)
 {
 	global.drag_id.x	= mouse_x - global.drag_id.x_grab;

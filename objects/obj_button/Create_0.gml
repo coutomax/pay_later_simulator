@@ -35,7 +35,6 @@ paused_imune	= [
 function button_actions()
 {
 	// valida botões fora do opainel de pause quando global.pause == true;
-
 	if (getLayerName != "ui_pause_menu" && getLayerName != "ui_quit_without_save" && global.paused)
 	{
 		exit;
@@ -82,6 +81,8 @@ function button_actions()
 			break;
 		
 			case "back_menu_yes_option":	
+				layer_set_visible("ui_bottom_buttons", true)
+			
 				scr_reset();
 				
 				layer_set_visible(self.layer, false);

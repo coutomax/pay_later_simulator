@@ -43,6 +43,7 @@ global.month				= 1;
 global.year					= 1;
 global.total_bills			= 0.0;
 global.fade					= 0;
+global.puzzle_points		= 0;
 
 global.drag_id				= noone;
 
@@ -53,9 +54,7 @@ global.y_size				= 0;
 //controlers - string
 global.current_action		= noone;
 
-global.game_data			= {};
-
-global.papers_created		= [];
+global.game_data			= noone;
 
 #region Object puzzles
 	global.puzzles =
@@ -75,118 +74,46 @@ global.papers_created		= [];
 	global.papers =
 	[
 		{
-			_id		:		0, //vinculado ao sprite_index
-			status	:		[
-				{
-					_id					:		0,
-					description			:		"Valid"
-				},
-				{
-					_id					:		1,
-					description			:		"Invalid"
-				},
-				{
-					_id					:		2,
-					description			:		"Unreadable"
-				}
-			],
-			valid	:		true, //pode ser válido?
-			sprite	:		spr_paper_1
+			_id				:		0, 
+			status			:		0, //vinculado ao sprite_index
+			description		:		"",
+			valid			:		true, //pode ser válido?
+			sprite			:		spr_paper_1
 		},
 		{
-			_id		:		1, //vinculado ao sprite_index
-			status	:		[
-				{
-					_id					:		0,
-					description			:		"Valid"
-				},
-				{
-					_id					:		1,
-					description			:		"Invalid"
-				},
-				{
-					_id					:		2,
-					description			:		"Unreadable"
-				}
-			],
-			valid	:		true, //pode ser válido?
-			sprite	:		spr_paper_2
+			_id				:		1, 
+			status			:		0, //vinculado ao sprite_index
+			description		:		"",
+			valid			:		true, //pode ser válido?
+			sprite			:		spr_paper_2
 		},
 		{
-			_id		:		2, //vinculado ao sprite_index
-			status	:		[
-				{
-					_id					:		0,
-					description			:		"Valid"
-				},
-				{
-					_id					:		1,
-					description			:		"Invalid"
-				},
-				{
-					_id					:		2,
-					description			:		"Unreadable"
-				}
-			],
-			valid	:		true, //pode ser válido?
-			sprite	:		spr_paper_3
+			_id				:		2,
+			status			:		0, //vinculado ao sprite_index
+			description		:		"",
+			valid			:		true, //pode ser válido?
+			sprite			:		spr_paper_3
 		},
 		{
-			_id		:		3, //vinculado ao sprite_index
-			status	:		[
-				{
-					_id					:		0,
-					description			:		"Valid"
-				},
-				{
-					_id					:		1,
-					description			:		"Invalid"
-				},
-				{
-					_id					:		2,
-					description			:		"Unreadable"
-				}
-			],
-			valid	:		true, //pode ser válido?
-			sprite	:		spr_paper_4
+			_id				:		3, 
+			status			:		0, //vinculado ao sprite_index
+			description		:		"",
+			valid			:		true, //pode ser válido?
+			sprite			:		spr_paper_4
 		},
 		{
-			_id		:		4, //vinculado ao sprite_index
-			status	:		[
-				{
-					_id					:		0,
-					description			:		"Valid"
-				},
-				{
-					_id					:		1,
-					description			:		"Invalid"
-				},
-				{
-					_id					:		2,
-					description			:		"Unreadable"
-				}
-			],
-			valid	:		false, //pode ser válido?
-			sprite	:		spr_paper_5
+			_id				:		4, 
+			status			:		0, //vinculado ao sprite_index
+			description		:		"",
+			valid			:		false, //pode ser válido?
+			sprite			:		spr_paper_5
 		},
 		{
-			_id		:		5, //vinculado ao sprite_index
-			status	:		[
-				{
-					_id					:		0,
-					description			:		"Valid"
-				},
-				{
-					_id					:		1,
-					description			:		"Invalid"
-				},
-				{
-					_id					:		2,
-					description			:		"Unreadable"
-				}
-			],
-			valid	:		false, //pode ser válido?
-			sprite	:		spr_paper_6
+			_id				:		5, 
+			status			:		0, //vinculado ao sprite_index
+			description		:		"",
+			valid			:		false, //pode ser válido?
+			sprite			:		spr_paper_6
 		},
 	];
 #endregion

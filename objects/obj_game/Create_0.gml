@@ -1,3 +1,5 @@
+randomise();
+
 depth						= 9999;
 
 game_seconds				= 0;

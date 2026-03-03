@@ -20,6 +20,7 @@ function scr_reset(){
 	global.max_life					= 100;
 	global.velocity					= 4;
 	global.fade						= 0;
+	global.puzzle_points			= 0;
 
 	global.energy					= 100;
 	global.stress					= 0;
@@ -35,17 +36,17 @@ function scr_reset(){
 
 	global.x_size					= 0;
 	global.y_size					= 0;
+	
 	global.opened					= false;
 	global.is_animating				= false;
 	
 	global.drag_id					= noone;
 	global.current_action			= noone;
-	
-	global.papers_created			= [];
 
-	//object reset
+	//object reset	
 	if (instance_exists(obj_green_button))
 	{
+		show_debug_message("AQUI")
 		obj_green_button.this_worked				= false;
 	}
 	
