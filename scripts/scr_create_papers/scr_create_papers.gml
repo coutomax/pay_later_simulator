@@ -44,10 +44,10 @@ function scr_create_papers(){
 			}
 		}
 		
-		_xpos						= random_range(350, display_get_width() - 350);
-		_ypos						= random_range(540, display_get_height() - 540);
+		_xpos						= display_get_gui_width() / 2;
+		_ypos						= (display_get_gui_height() / 2) - 80;
 		
-		var _inst					= instance_create_layer(0, 0, "Puzzle_instance", obj_paper);
+		var _inst					= instance_create_layer(_xpos, _ypos, "Puzzle_instance", obj_paper);
 		
 		_inst.data					= _object[i];
 		_inst.sprite_index			= _object[i].sprite;
