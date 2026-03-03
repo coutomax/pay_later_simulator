@@ -22,6 +22,7 @@
     {"$GMFolder":"","%Name":"Papers","folderPath":"folders/Objects/Visual Game Objects/Puzzles/Papers.yy","name":"Papers","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Init and Reset","folderPath":"folders/Scripts/Init and Reset.yy","name":"Init and Reset","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sounds","folderPath":"folders/Sounds.yy","name":"Sounds","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Game Effects","folderPath":"folders/Sounds/Game Effects.yy","name":"Game Effects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"UI","folderPath":"folders/Sounds/UI.yy","name":"UI","resourceType":"GMFolder","resourceVersion":"2.0",},

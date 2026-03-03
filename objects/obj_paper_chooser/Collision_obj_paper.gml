@@ -9,7 +9,7 @@ if (global.drag_id != noone)
 			{
 				global.puzzle_points++;
 				instance_destroy(other);
-				global.drag_id = noone;
+				global.drag_id		= noone;
 			}
 		break;
 		case "cancel":
@@ -17,7 +17,7 @@ if (global.drag_id != noone)
 			{
 				global.puzzle_points++;
 				instance_destroy(other);
-				global.drag_id = noone;
+				global.drag_id		= noone;
 			}
 		break;
 		case "alert":
@@ -25,7 +25,7 @@ if (global.drag_id != noone)
 			{
 				global.puzzle_points++;
 				instance_destroy(other);
-				global.drag_id = noone;
+				global.drag_id		= noone;
 			}
 		break;
 	}
@@ -39,4 +39,8 @@ if (_papers == 0)
 	global.paused			= false;
 	global.puzzle_paused	= false;
 	global.fading			= false;
+	
+	global.stress			+= 15;
+	obj_game.game_hours		+= 2;
+	global.hours			= obj_game.game_hours;
 }

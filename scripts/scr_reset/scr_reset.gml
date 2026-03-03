@@ -44,9 +44,24 @@ function scr_reset(){
 	global.current_action			= noone;
 
 	//object reset	
+	if (instance_exists(obj_game))
+	{
+		obj_game.game_seconds				= 0;
+		obj_game.game_minutes				= 0;
+		obj_game.game_hours					= 8;
+
+		obj_game.game_days					= 1;
+		obj_game.game_months				= 1;
+		obj_game.game_years					= 1;
+
+		obj_game.fade_speed					= 0.03;
+		obj_game.actual_fade				= 0;
+
+		obj_game.show_pause_dialog			= false;
+	}
+	
 	if (instance_exists(obj_green_button))
 	{
-		show_debug_message("AQUI")
 		obj_green_button.this_worked				= false;
 	}
 	

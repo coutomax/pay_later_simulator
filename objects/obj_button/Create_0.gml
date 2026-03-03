@@ -80,7 +80,8 @@ function button_actions()
 				layer_set_visible("ui_quit_without_save", true);			 
 			break;
 		
-			case "back_menu_yes_option":	
+			case "back_menu_yes_option":
+				// visible = true para validar instance_exists no reset.
 				layer_set_visible("ui_bottom_buttons", true)
 			
 				scr_reset();

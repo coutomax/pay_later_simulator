@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_reset",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Init and Reset",
+    "path":"folders/Scripts/Init and Reset.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
