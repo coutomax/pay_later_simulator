@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_ui_expansor_animate",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"visual_effects",
+    "path":"folders/Scripts/visual_effects.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

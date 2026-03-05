@@ -31,6 +31,8 @@ if (global.new_game)
 	scr_fader(0.03, 0, 1);
 }
 
+global.is_stressed		= global.stress > 65;
+
 day_editor();
 money_editor();
 clock_formatter();

@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_expansor_behaviors",
+  "%Name":"scr_blink",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_expansor_behaviors",
+  "name":"scr_blink",
   "parent":{
     "name":"visual_effects",
     "path":"folders/Scripts/visual_effects.yy",

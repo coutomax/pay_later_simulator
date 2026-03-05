@@ -1,0 +1,1 @@
+blinker.on_step(global.is_stressed);

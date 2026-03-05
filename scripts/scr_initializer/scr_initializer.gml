@@ -14,6 +14,7 @@ global.hadSleep				= false;
 global.worked				= false;
 global.on_the_table			= false;
 global.puzzle				= false;
+global.is_stressed			= false;
 
 //controllers - booleanos
 global.opened				= false;

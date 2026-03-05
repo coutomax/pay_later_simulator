@@ -12,6 +12,7 @@ function scr_reset(){
 	global.puzzle					= false;
 	global.fading					= false;
 	global.puzzle_paused			= false;
+	global.is_stressed				= false;
 	global.new_game					= true;
 
 	//numeric reset
@@ -44,6 +45,11 @@ function scr_reset(){
 	global.current_action			= noone;
 
 	//object reset	
+	if (instance_exists(obj_stressed))
+	{
+		obj_stressed.image_alpha	= 0;
+	}
+	
 	if (instance_exists(obj_game))
 	{
 		obj_game.game_seconds				= 0;
