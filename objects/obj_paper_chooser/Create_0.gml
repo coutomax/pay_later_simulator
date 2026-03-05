@@ -18,3 +18,20 @@ switch (check_type)
 		image_index = 2;
 	break;
 }
+
+function collision_condition (condition, obj, snd)
+{
+
+	if (condition)
+	{
+		global.puzzle_points++;				
+		audio_play_sound(snd, 0, false, 0.3);
+	}
+	else
+	{
+		audio_play_sound(snd_wrong, 0, false, 0.3);
+	}
+	
+	instance_destroy(obj);
+	global.drag_id		= noone;
+}

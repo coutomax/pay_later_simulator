@@ -27,8 +27,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Puzzles",
-    "path":"folders/Sprites/Game/Puzzles.yy",
+    "name":"papers",
+    "path":"folders/Sprites/Game/Puzzles/papers.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

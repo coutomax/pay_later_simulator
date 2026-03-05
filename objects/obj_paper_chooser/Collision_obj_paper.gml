@@ -1,46 +1,15 @@
-show_debug_message(other.data)
-
 if (global.drag_id != noone)
 {
 	switch (check_type)
 	{
 		case "check":
-			if (other.data.valid && other.data.status == 1)
-			{
-				global.puzzle_points++;
-				instance_destroy(other);
-				global.drag_id		= noone;
-			}
+			collision_condition(other.data.valid && other.data.status == 1, other, snd_paper_paging);
 		break;
 		case "cancel":
-			if (other.data.status == 2)
-			{
-				global.puzzle_points++;
-				instance_destroy(other);
-				global.drag_id		= noone;
-			}
+			collision_condition(other.data.status == 2, other, snd_paper_tear);
 		break;
 		case "alert":
-			if (other.data.valid && other.data.status == 0)
-			{
-				global.puzzle_points++;
-				instance_destroy(other);
-				global.drag_id		= noone;
-			}
+			collision_condition(other.data.valid && other.data.status == 0, other, snd_paper_writing);
 		break;
 	}
-}
-
-var	_papers			= instance_number(obj_paper);
-
-if (_papers == 0)
-{
-	global.puzzle			= false;
-	global.paused			= false;
-	global.puzzle_paused	= false;
-	global.fading			= false;
-	
-	global.stress			+= 15;
-	obj_game.game_hours		+= 2;
-	global.hours			= obj_game.game_hours;
 }

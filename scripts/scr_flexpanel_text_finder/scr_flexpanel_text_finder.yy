@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_flexpanel_text_finder",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"text_functions",
+    "path":"folders/Scripts/text_functions.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

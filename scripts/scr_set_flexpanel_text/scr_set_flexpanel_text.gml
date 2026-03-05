@@ -1,4 +1,4 @@
-function scr_set_flexpanel_text(obj, text_name){
+function scr_set_flexpanel_text(obj = noone, text_name, layer_name = noone){
 
 	var t = 
 	{
@@ -11,11 +11,19 @@ function scr_set_flexpanel_text(obj, text_name){
 		
 		object				:	obj,
 		txt_name			:	text_name,
+		layer_				:	layer_name,
 		
 		on_create			:	function ()
 		{
-			
-			self.txt_layer				= layer_get_name(self.object.layer);
+			if (self.object == noone)
+			{
+				self.txt_layer = layer_get_name(self.layer_);
+			}
+			else
+			{
+				self.txt_layer				= layer_get_name(self.object.layer);
+			}
+						
 			self.flex_panel_node		= layer_get_flexpanel_node(self.txt_layer);
 			self.flex_panel_text		= flexpanel_node_get_child(self.flex_panel_node, "fp_text");
 			self.flex_panel_panel		= flexpanel_node_get_child(self.flex_panel_node, "fp_content");
