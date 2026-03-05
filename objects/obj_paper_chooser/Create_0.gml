@@ -9,19 +9,18 @@ yscale			= escalaY;
 switch (check_type)
 {
 	case "check":
-		image_index = 0;
+		image_index		= 0;
 	break;
 	case "cancel":
-		image_index = 1;
+		image_index		= 1;
 	break;
 	case "alert":
-		image_index = 2;
+		image_index		= 2;
 	break;
 }
 
 function collision_condition (condition, obj, snd)
 {
-
 	if (condition)
 	{
 		global.puzzle_points++;				
