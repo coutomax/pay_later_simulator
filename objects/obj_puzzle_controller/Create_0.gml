@@ -19,7 +19,6 @@ function puzzle_closer()
 		global.fading			= false;
 	
 		global.stress			+= (15 + (6 - global.puzzle_points) * 5);
-		show_debug_message($"STRESSING: {(15 + (6 - global.puzzle_points) * 5)}")
 		obj_game.game_hours		+= 2;
 		global.hours			= obj_game.game_hours;		
 	}

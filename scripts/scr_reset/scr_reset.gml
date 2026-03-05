@@ -45,9 +45,9 @@ function scr_reset(){
 	global.current_action			= noone;
 
 	//object reset	
-	if (instance_exists(obj_stressed))
+	if (instance_exists(obj_debuff))
 	{
-		obj_stressed.image_alpha	= 0;
+		obj_debuff.image_alpha	= 0;
 	}
 	
 	if (instance_exists(obj_game))
