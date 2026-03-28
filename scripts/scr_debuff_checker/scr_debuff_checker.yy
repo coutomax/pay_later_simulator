@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_initializer",
+  "%Name":"scr_debuff_checker",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_initializer",
+  "name":"scr_debuff_checker",
   "parent":{
     "name":"Init, Reset, var controllers",
     "path":"folders/Scripts/Init, Reset, var controllers.yy",

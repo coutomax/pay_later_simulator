@@ -14,7 +14,6 @@ global.hadSleep				= false;
 global.worked				= false;
 global.on_the_table			= false;
 global.puzzle				= false;
-global.is_stressed			= false;
 
 //controllers - booleanos
 global.opened				= false;
@@ -56,6 +55,30 @@ global.y_size				= 0;
 global.current_action		= noone;
 
 global.game_data			= noone;
+
+//crontroller - list
+global.debuffs_list			= [];
+
+#region Object debuffs
+	global.debuffs		=
+	[
+		{
+			_id					:		0,
+			description			:		"You are very stressed!",
+			sprite				:		spr_debuff_stressed,
+		},
+		{
+			_id					:		1,
+			description			:		"You are sick!",
+			sprite				:		spr_debuff_sick,
+		},
+		{
+			_id					:		2,
+			description			:		"You are tired!",
+			sprite				:		spr_debuff_tired,
+		}
+	];
+#endregion
 
 #region Object puzzles
 	global.puzzles =

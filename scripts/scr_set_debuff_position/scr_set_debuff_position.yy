@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_set_debuff_position",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_set_debuff_position",
+  "parent":{
+    "name":"visual_effects",
+    "path":"folders/Scripts/visual_effects.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

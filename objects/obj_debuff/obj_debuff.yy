@@ -28,14 +28,15 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v2","%Name":"debuff_id","filters":[],"listItems":[],"multiselect":false,"name":"debuff_id","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"row","filters":[],"listItems":[],"multiselect":false,"name":"row","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
+    {"$GMObjectProperty":"v2","%Name":"col","filters":[],"listItems":[],"multiselect":false,"name":"col","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_stressed",
-    "path":"sprites/spr_stressed/spr_stressed.yy",
+    "name":"spr_blank_icon",
+    "path":"sprites/spr_blank_icon/spr_blank_icon.yy",
   },
   "spriteMaskId":null,
   "visible":true,

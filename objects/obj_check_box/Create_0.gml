@@ -43,7 +43,7 @@ value_adjust.on_edit($"c$: {money_format}");
 
 
 
-button_desapear			= function()
+button_disapear			= function()
 {	
 	if (global.opened)
 	{

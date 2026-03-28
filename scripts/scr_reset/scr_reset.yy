@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_reset",
   "parent":{
-    "name":"Init and Reset",
-    "path":"folders/Scripts/Init and Reset.yy",
+    "name":"Init, Reset, var controllers",
+    "path":"folders/Scripts/Init, Reset, var controllers.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

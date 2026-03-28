@@ -1,1 +1,1 @@
-button_desapear();
+button_disapear();

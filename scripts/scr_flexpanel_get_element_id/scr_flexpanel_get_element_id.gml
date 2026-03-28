@@ -1,5 +1,3 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_flexpanel_get_element_id(obj_layer, childText){
 	
 	var flex_node			= layer_get_flexpanel_node(obj_layer);

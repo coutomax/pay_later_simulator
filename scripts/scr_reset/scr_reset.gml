@@ -43,6 +43,8 @@ function scr_reset(){
 	
 	global.drag_id					= noone;
 	global.current_action			= noone;
+	
+	global.debuffs_list				= [];
 
 	//object reset	
 	if (instance_exists(obj_debuff))
