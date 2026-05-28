@@ -1,2 +1,4 @@
 # pay_later_simulator
-Meu novo projeto de jogo upgrader
+Projeto de jogo upgrader.
+
+Está parado enquanto dou andamento ao meu projeto principal https://github.com/coutomax/arcanacycle_v2
